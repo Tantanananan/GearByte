@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GearByte</title>
+  <link rel="stylesheet" href="section.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <script src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\script.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">
+            <img class="logo" src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\logo2.png" alt="logo">
+        </a>
+        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">
+            <h1 class="logo1"><b>GearByte</b></h1>
+        </a>
+    </div>
+
+    <nav id="nav-menu">
+        <ul class="nav-links"   >
+            <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">Home</a></li>
+            <li>
+                <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html"style="color: #3b82f6;">Items</a>
+                <div class="dropdown-content">
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\graphicscard.html"style="color: #3b82f6;">Graphics Card</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\motherboards.html">Motherboard</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\processors.html">Processors</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\powersupply.html">Power supply</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\monitor.html">Monitor</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\ssd.html">SSD</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\memory.html">RAM</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\keyboard.html">Keyboards</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\mouse.html">Mouse</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\case.html">Pc Case</a>
+                </div>
+            </li>
+            <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html">About us</a></li>
+        </ul>
+        <div class="burger" id="burger">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>
+    <!-- <div class="container">
+    
+        Navigation Menu
+        <nav id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html" style="color: #3b82f6;">Home</a></li>
+                <li>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html">Items</a>
+                    <div class="dropdown-content">
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\graphicscard.html"style="color: #3b82f6;">Graphics Card</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\motherboards.html">Motherboard</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\processors.html">Processors</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\powersupply.html">Power supply</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\monitor.html">Monitor</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\ssd.html">SSD</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\memory.html">RAM</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\keyboard.html">Keyboards</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\mouse.html">Mouse</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\case.html">Pc Case</a>
+                    </div>
+                </li>
+                <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html">About us</a></li>
+                <li><a href="contact.html" class="cta"><button>Contacts</button></a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+
+    </div> -->
+
+<script>
+    const burger = document.getElementById('burger');
+const navLinks = document.querySelector('.nav-links');
+const navLinkItems = document.querySelectorAll('.nav-links a');
+
+// Toggle mobile menu
+burger.addEventListener('click', (e) => {
+e.stopPropagation();
+navLinks.classList.toggle('active');
+});
+
+// Close menu on link click
+navLinkItems.forEach(link => {
+link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+});
+});
+
+// Close when clicking outside
+document.addEventListener('click', (e) => {
+if (!navLinks.contains(e.target) && !burger.contains(e.target)) {
+    navLinks.classList.remove('active');
+}
+});
+
+</script>
+    <h1 class="hd">GRAPHICS CARD</h1>
+    <div class="product-grid">
+
+      
+        <div class="product" style="background-color: #e0e7ff" data-name="product1">
+            <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\MSI_Nvidia_Geforce_RTX_3050_Ventus_2X_XS_OC_8GB_128bit_GDDR6_Videocard_2048x-Photoroom-removebg-preview.png" alt="c1" >
+            <div class="definition">
+                <p><br>₱15,300.00<br>MSI Nvidia Geforce RTX 3050 Ventus 2X XS OC 8GB 128bit GDDR6 Videocard 2048x</p> 
+            </div>
+        </div>
+   
+    
+        <div class="product" style="background-color: #e0e7ff" data-name="product2">
+            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\MSI_RTX_4060_Ventus_2x_OC_2048x-Photoroom-removebg-preview.png" alt="c1">
+            <div class="definition">
+                <p><br><br>₱19,900.00<br>MSI RTX 4060 Ventus 2x OC 2048x</p> 
+            </div>
+        </div>
+
+        <div class="product" style="background-color: #e0e7ff" data-name="product3">
+            <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS_GT_730-removebg-preview.png" alt="c1">
+            <div class="definition">
+                <p><br><br>₱3,600.00<br>VC-ASUS GT 730</p> 
+            </div>
+            </div>
+  
+            <div class="product" style="background-color: #e0e7ff" data-name="product4">
+                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS-GT1030-removebg-preview.png" alt="c1">
+                <div class="definition">
+                    <p><br><br>₱4,350.00<br>VC-ASUS GT 1030</p> 
+                </div>
+                </div>
+   
+                <div class="product" style="background-color: #e0e7ff" data-name="product5">
+                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS-RTX5070TI-PRIME-16GB-GDDR7-256BIT-6-removebg-preview.png" alt="c1">
+                    <div class="definition">
+                        <p><br>₱65,850.00<br>VC-ASUS RTX5070TI PRIME 16GB GDDR7 256BIT-6</p> 
+                    </div>
+                    </div>
+
+                    <div class="product" style="background-color: #e0e7ff" data-name="product6">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS-RX6600-DUAL-V3-8GB-DDR6-128BIT-6-removebg-preview.png" alt="c1">
+                        <div class="definition">
+                            <p><br>₱13,600.00<br>VC-ASUS RX6600 DUAL V3 8GB DDR6 128BIT-6</p> 
+                        </div>
+                        </div>
+
+                        <div class="product" style="background-color: #e0e7ff" data-name="product7">
+                            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS-TUF-RTX4070TI-SUPER-NON-OC-16GB-GDDR-1-removebg-preview.png" alt="c1">
+                            <div class="definition">
+                                <p><br><br>₱63,050.00<br>VC-ASUS TUF RTX4070TI SUPER NON-OC 16GB GDDR-1</p> 
+                            </div>
+                            </div>
+
+                            <div class="product" style="background-color: #e0e7ff" data-name="product8">
+                                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-GIGABYTE-GTX1650-WINDFORCE-OC-4GB-GDDR6-128BIT-1-removebg-preview.png" alt="c1">
+                                <div class="definition">
+                                    <p><br><br>₱8,800.00<br>VC-GIGABYTE GTX1650 WINDFORCE OC-4GB GDDR6 128BIT-1</p> 
+                                </div>
+                                </div>
+
+                            <div class="product" style="background-color: #e0e7ff"data-name="product9">
+                                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-MSI-RTX5080-GAMING-TRIO-OC-16GB-GDDR7-256BIT-5-removebg-preview.png" alt="c1">
+                                <div class="definition">
+                                    <p><br>₱82,850.00<br>VC-MSI RTX5080 GAMING-TRIO-OC 16GB GDDR7 256BIT-5</p> 
+                                </div>
+                                </div>
+
+                            <div class="product" style="background-color: #e0e7ff"data-name="product10">
+                                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-MSI-RTX5090-GAMING-TRIO-OC-32GB-GDDR7-512BIT-5-removebg-preview.png" alt="c1">
+                                <div class="definition">
+                                    <p><br><h1 class="logo" style="position: absolute;left: 100px;top: 20px;font-size: 1.5em;"><b>GearByte</b></h1></a>₱164,450.00<br>VC-MSI RTX5090 GAMING-TRIO-OC 32GB GDDR7 512BIT-5</p> 
+                                </div>
+                                </div>     
+    </div>
+    <!-- POP UPPP -->
+    <div class="products-preview">
+      <div class="preview" data-target="product1">
+          <i class="fa fa-times"></i>
+          <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\MSI_Nvidia_Geforce_RTX_3050_Ventus_2X_XS_OC_8GB_128bit_GDDR6_Videocard_2048x-Photoroom-removebg-preview.png" alt="gc1">
+          <h3>MSI GeForce RTX™ 3050 VENTUS 2X XS OC 8G GDDR6 128-bit Graphics Card</h3>
+          <p class="description">The GeForce RTX™ 3050 is built with the powerful graphics performance of the NVIDIA Ampere architecture.</p>
+          <div class="price">₱15,300.00</div>
+          <div class="buttons">
+              <a href="https://pcx.com.ph/products/msi-geforce-rtx-3050-ventus-2x-xs-oc-8g-gddr6-128-bit-graphics-card
+              " target="_blank" class="cart">See More</a>
+          </div>
+      </div>
+  
+      <div class="preview" data-target="product2">
+          <i class="fa fa-times"></i>
+          <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\MSI_RTX_4060_Ventus_2x_OC_2048x-Photoroom-removebg-preview.png">
+          <h3>MSI GeForce RTX™ 3050 VENTUS 2X XS OC 8G GDDR6 128-bit Graphics Card
+          </h3>
+          <p class="description">The GeForce RTX™ 4060 lets you take on the latest games and apps with the ultra-efficient NVIDIA Ada Lovelace architecture.</p>
+          <div class="price">₱19,900.00</div>
+          <div class="buttons">
+            <a href="https://pcx.com.ph/collections/graphics-cards/products/msi-geforce-rtx-4060-ventus-2x-oc-8gb-gddr6-128-bit-graphics-card
+            " target="_blank" class="cart">See More</a>
+        </div>
+      </div>
+  
+  
+      <div class="preview" data-target="product3">
+          <i class="fa fa-times"></i>
+          <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS_GT_730-removebg-preview.png">
+          <h3>ASUS GeForce® GT 730 2GB GDDR5 64-bit Graphics Card
+          </h3>
+          <p class="description">ASUS GeForce® GT 730 2GB GDDR5 low profile graphics card for silent HTPC build (with I/O port brackets)
+          </p>
+          <div class="price">₱3,600.00
+          </div>
+          <div class="buttons">
+            <a href="https://pcx.com.ph/collections/graphics-cards/products/asus-geforce-gt-730-2gb-gddr5-64-bit-graphics-card
+            " target="_blank" class="cart">See More</a>
+        </div>
+      </div>  
+  
+        <div class="preview" data-target="product4">
+          <i class="fa fa-times"></i>
+          <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS-GT1030-removebg-preview.png">
+          <h3>ASUS GT1030-SL 2GB BRK GDDR5 64-bit Graphics Card          </h3>
+          <p class="description">ASUS GeForce GT 1030 is the fantastic graphics card from ASUS. Engineered with a highly-efficient 0dB thermal design.</p>
+          <div class="price">₱4,350.00</div>
+          <div class="buttons">
+            <a href="https://pcx.com.ph/collections/graphics-cards/products/asus-gt1030-sl-2gb-brk-gddr5-64-bit-graphics-card
+            " target="_blank" class="cart">See More</a>
+        </div>
+      </div>    
+      
+      <div class="preview" data-target="product5">
+          <i class="fa fa-times"></i>
+          <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS-RTX5070TI-PRIME-16GB-GDDR7-256BIT-6-removebg-preview.png">
+          <h3>ASUS Prime GeForce RTX™ 5070 Ti 16GB GDDR7 256-bit Graphics Card          </h3>
+          <p class="description">the GeForce RTX 5070 Ti, an SFF-Ready Enthusiast GeForce Card featuring a 2.5-slot design for expansive compatibility
+          </p>
+          <div class="price">₱65,850.00</div>
+          <div class="buttons">
+            <a href="https://pcx.com.ph/collections/graphics-cards/products/asus-prime-geforce-rtx-5070-ti-16gb-gddr7-256-bit-graphics-card
+            " target="_blank" class="cart">See More</a>
+        </div>
+      </div>   
+      
+      <div class="preview" data-target="product6">
+          <i class="fa fa-times"></i>
+          <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS-RX6600-DUAL-V3-8GB-DDR6-128BIT-6-removebg-preview.png" alt="ASUS TUF Gaming GT501 ATX Mid Tower Case.png">
+          <h3>ASUS Dual Radeon™ RX 6600 V3 8GB GDDR6 128-bit Graphics Card</h3>
+          <p class="description">Delivering the latest AMD RDNA™ 2 architecture experience in its purest form, the ASUS Dual Radeon™ RX 6600 V3 melds performance and simplicity like no other.  </p>
+          <div class="price">₱13,600.00</div>
+          <div class="buttons">
+            <a href="https://pcx.com.ph/collections/graphics-cards/products/asus-prime-geforce-rtx-5070-ti-16gb-gddr7-256-bit-graphics-card
+            " target="_blank" class="cart">See More</a>
+        </div>
+      </div>    
+      
+      <div class="preview" data-target="product7">
+          <i class="fa fa-times"></i>
+          <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS-TUF-RTX4070TI-SUPER-NON-OC-16GB-GDDR-1-removebg-preview.png" alt="COOLER MASTER MASTERBOX">
+          <h3>ASUS TUF Gaming GeForce RTX™ 4070 Ti SUPER
+          </h3>
+          <p class="description">The ASUS TUF Gaming GeForce RTX™ 4070 Ti SUPER 16GB GDDR6X Non-OC Graphics Card is a high-performance GPU designed for gamers and creators 
+            </p>
+          <div class="price">₱63,050.00</div>
+          <div class="buttons">
+            <a href="https://pcx.com.ph/products/asus-tuf-gaming-geforce-rtx-4070-ti-12gb-gddr6x-oc-edition-graphics-card?_pos=1&_sid=936534b13&_ss=r    " target="_blank" class="cart">See More</a>
+        </div>
+      </div>
+  
+      <div class="preview" data-target="product8">
+          <i class="fa fa-times"></i>
+          <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-GIGABYTE-GTX1650-WINDFORCE-OC-4GB-GDDR6-128BIT-1-removebg-preview.png">
+          <h3>GIGABYTE GeForce® GTX 1650 WINDFORCE OC 4G </h3>
+          <p class="description">Game, stream, create. The GeForce RTX™ 4060 lets you take on the latest games and apps with the ultra-efficient NVIDIA Ada Lovelace architecture.  </p>
+          <div class="price">₱8,800.00</div>
+          <div class="buttons">
+            <a href="https://pcx.com.ph/collections/pc-tower-cases/products/msi-mag-forge-100r-tempered-glass-argb-fans-mid-tower-chassis-black
+  " target="_blank" class="cart">See More</a>
+        </div>
+      </div>    
+      
+      <div class="preview" data-target="product9">
+          <i class="fa fa-times"></i>
+          <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-MSI-RTX5080-GAMING-TRIO-OC-16GB-GDDR7-256BIT-5-removebg-preview.png">
+          <h3>MSI GeForce RTX™ 5080 GAMING TRIO OC </h3>
+          <p class="description">The MSI GeForce RTX™ 5080 GAMING TRIO OC 16GB GDDR7 256-bit Graphics Card is a premium GPU that delivers exceptional performance for gamers, and professionals who need top-tier graphics processing.</p>
+          <div class="price">₱82,850.00</div>
+          <div class="buttons">
+            <a href="https://pcx.com.ph/collections/pc-tower-cases/products/nzxt-h5-flow-cc-h51fb-01-tempered-glass-atx-mid-tower-chassis-black
+            " target="_blank" class="cart">See More</a>
+        </div>
+      </div>    
+      
+      <div class="preview" data-target="product10">
+          <i class="fa fa-times"></i>
+          <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-MSI-RTX5090-GAMING-TRIO-OC-32GB-GDDR7-512BIT-5-removebg-preview.png">
+          <h3>MSI GeForce RTX™ 5090 GAMING TRIO OC 32GB GDDR7 512-bit Graphics Card</h3>
+          <p class="description">The MSI GeForce RTX™ 5090 GAMING TRIO OC 32GB GDDR7 512-bit Graphics Card is an incredibly high-end</p>
+          <div class="price">₱164,450.00
+          </div>
+          <div class="buttons">
+            <a href="https://pcx.com.ph/collections/graphics-cards/products/msi-geforce-rtx-5090-gaming-trio-oc-32gb-gddr7-512-bit-graphics-card
+            " target="_blank" class="cart">See More</a>
+        </div>
+      </div>
+  </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+          <img class="logo" src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\logo2.png" alt="logo" />
+           <h4>GearByte</h4>
+           <div class="icons">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+           </div>
+            </div>
+          <div class="footer-content">
+            <h4>For more Inquiries visit this website</h4>
+            <p><a href="https://easypc.com.ph/?srsltid=AfmBOooT-pG1UVrnCeNq0ah7m8koZ74Pl7_VkoFnwNeT1hZ8pUmgnhQs" target="_blank" >PcEasy</a></p>
+            <p><a href="https://pcx.com.ph/" target="_blank" >PcExpress</a></p>
+          </div>  
+          <div class="footer-content">
+            <h4>Quick links</h4>
+            <ul>
+              <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">Home</a></li>
+              <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html">Items</a></li>
+              <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html">About us</a></li>
+               
+            </ul>
+          </div>
+
+    </footer>
+    <P style="text-align: center;background-color: rgba(128, 128, 128, 0.467);margin-top: 0px;">@2025 All Rights Reserved</P>
+<p style="color: white;text-align: center;background-color: red;margin: 0px;">Disclaimer: This website is for educational purposes only</p>
+</body>
+</html>

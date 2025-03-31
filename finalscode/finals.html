@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GearByte</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\practice.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">
+            <img class="logo" src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\logo2.png" alt="logo">
+        </a>
+        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">
+            <h1 class="logo1"><b>GearByte</b></h1>
+        </a>
+    </div>
+
+    <nav id="nav-menu">
+        <ul class="nav-links"   >
+            <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html" style="color: #3b82f6;">Home</a></li>
+            <li>
+                <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html">Items</a>
+                <div class="dropdown-content">
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\graphicscard.html">Graphics Card</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\motherboards.html">Motherboard</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\processors.html">Processors</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\powersupply.html">Power supply</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\monitor.html">Monitor</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\ssd.html">SSD</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\memory.html">RAM</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\keyboard.html">Keyboards</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\mouse.html">Mouse</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\case.html">Pc Case</a>
+                </div>
+            </li>
+            <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html">About us</a></li>
+        </ul>
+        <div class="burger" id="burger">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>
+    <!-- <div class="container">
+    
+        Navigation Menu
+        <nav id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html" style="color: #3b82f6;">Home</a></li>
+                <li>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html">Items</a>
+                    <div class="dropdown-content">
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\graphicscard.html">Graphics Card</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\motherboards.html">Motherboard</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\processors.html">Processors</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\powersupply.html">Power supply</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\monitor.html">Monitor</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\ssd.html">SSD</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\memory.html">RAM</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\keyboard.html">Keyboards</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\mouse.html">Mouse</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\case.html">Pc Case</a>
+                    </div>
+                </li>
+                <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html">About us</a></li>
+                <li><a href="contact.html" class="cta"><button>Contacts</button></a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+
+    </div> -->
+
+<script>
+    const burger = document.getElementById('burger');
+const navLinks = document.querySelector('.nav-links');
+const navLinkItems = document.querySelectorAll('.nav-links a');
+
+// Toggle mobile menu
+burger.addEventListener('click', (e) => {
+e.stopPropagation();
+navLinks.classList.toggle('active');
+});
+
+// Close menu on link click
+navLinkItems.forEach(link => {
+link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+});
+});
+
+// Close when clicking outside
+document.addEventListener('click', (e) => {
+if (!navLinks.contains(e.target) && !burger.contains(e.target)) {
+    navLinks.classList.remove('active');
+}
+});
+
+</script>
+    <div class="image-container">
+        <img
+          src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\bg3 v3.png"
+          alt="Image Description"
+          style="width: 100%; height: 150%; object-fit: cover"
+        />
+        <div class="overlay-text">
+          <p> Display the latest in computers, gaming gear, and
+            accessories at unbeatable prices.
+          </p>
+        </div>
+      </div>
+    <p style="text-align: center; margin-top: 15px">View by Category</h2>
+    <div class="product-grid">
+
+        <a href="categories/graphicscard.html">
+            <div class="product" style="background-color: #e0e7ff;">
+                <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\g.png" alt="c1">
+                <div class="definition">
+                    <p><br><br><br><br><br><br><br><br><br>GRAPHICS CARD</p> 
+                </div>
+                </div>
+            </a>
+
+            <a href="categories/motherboards.html">
+                <div class="product" style="background-color: #e0e7ff;">
+                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\m.png" alt="c1">
+                    <div class="definition">
+                        <p><br><br><br><br><br><br><br><br><br>MOTHERBOARD</p> 
+                    </div>
+                </div>
+            </a>
+
+        <a href="categories/processors.html">
+        <div class="product" style="background-color: #e0e7ff;">
+            <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\c1.png" alt="c1" >
+            <div class="definition">
+                <p><br><br><br><br><br><br><br><br><br>PROCESSORS</p> 
+            </div>
+        </div>
+    </a>
+
+    <a href="categories/powersupply.html">
+        <div class="product" style="background-color: #e0e7ff;">
+            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\psu.png" alt="c1">
+            <div class="definition">
+                <p><br><br><br><br><br><br><br><br><br>POWER SUPPLY</p> 
+            </div>
+            </div>
+        </a>
+
+        <a href="categories/monitor.html">
+            <div class="product" style="background-color: #e0e7ff;">
+                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\mt.png" alt="c1">
+                <div class="definition">
+                    <p><br><br><br><br><br><br><br><br><br>MONITOR</p> 
+                </div>
+                </div>
+            </a> 
+       
+            <a href="categories/ssd.html">
+                <div class="product" style="background-color: #e0e7ff;">
+                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\s.png" alt="c1">
+                    <div class="definition">
+                        <p><br><br><br><br><br><br><br><br><br>SOLID STATE DRIVE</p> 
+                    </div>
+                    </div>
+                </a>
+
+            <a href="categories/memory.html">
+            <div class="product" style="background-color: #e0e7ff;">
+                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\r.png" alt="c1">
+                <div class="definition">
+                    <p><br><br><br><br><br><br><br><br><br>RAM</p> 
+                </div>
+                </div>
+            </a>
+
+            <a href="categories/keyboard.html">
+                <div class="product" style="background-color: #e0e7ff;">
+                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\kb.png" alt="c1">
+                    <div class="definition">
+                        <p><br><br><br><br><br><br><br><br><br>KEYBOARD</p> 
+                    </div>
+                    </div>
+                </a>
+
+                <a href="categories/mouse.html">
+                    <div class="product" style="background-color: #e0e7ff;">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\ms.png" alt="c1">
+                        <div class="definition">
+                            <p><br><br><br><br><br><br><br><br><br>MOUSE</p> 
+                        </div>
+                        </div>
+                    </a> 
+                    
+                <a href="categories/case.html">
+                    <div class="product" style="background-color: #e0e7ff;">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\c.png" alt="c1">
+                        <div class="definition">
+                            <p><br><br><br><br><br><br><br><br><br>PC CASE</p> 
+                        </div>
+                        </div>
+                    </a>                         
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+          <img class="logo" src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\logo2.png" alt="logo" />
+           <h4>GearByte</h4>
+           <div class="icons">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+           </div>
+            </div>
+          <div class="footer-content">
+            <h4>For more Inquiries visit this website</h4>
+            <p><a href="https://easypc.com.ph/?srsltid=AfmBOooT-pG1UVrnCeNq0ah7m8koZ74Pl7_VkoFnwNeT1hZ8pUmgnhQs" target="_blank" >PcEasy</a></p>
+            <p><a href="https://pcx.com.ph/" target="_blank" >PcExpress</a></p>
+          </div>  
+          <div class="footer-content">
+            <h4>Quick links</h4>
+            <ul>
+              <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html"style="color: #3b82f6;">Home</a></li>
+              <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html">Items</a></li>
+              <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html">About us</a></li>
+               
+            </ul>
+          </div>
+         
+        </footer>
+        <P style="text-align: center;background-color: rgba(128, 128, 128, 0.467);margin-top: 0px;">@2025 All Rights Reserved</P>
+    <p style="color: white;text-align: center;background-color: red;margin: 0px;">Disclaimer: This website is for educational purposes only</p>
+    
+</body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GearByte</title>
+  <link rel="stylesheet" href="section.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <script src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">
+            <img class="logo" src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\logo2.png" alt="logo">
+        </a>
+        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">
+            <h1 class="logo1"><b>GearByte</b></h1>
+        </a>
+    </div>
+
+    <nav id="nav-menu">
+        <ul class="nav-links"   >
+            <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">Home</a></li>
+            <li>
+                <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html"style="color: #3b82f6;">Items</a>
+                <div class="dropdown-content">
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\graphicscard.html">Graphics Card</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\motherboards.html">Motherboard</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\processors.html">Processors</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\powersupply.html">Power supply</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\monitor.html">Monitor</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\ssd.html">SSD</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\memory.html">RAM</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\keyboard.html">Keyboards</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\mouse.html">Mouse</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\case.html"style="color: #3b82f6;">Pc Case</a>
+                </div>
+            </li>
+            <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html">About us</a></li>
+        </ul>
+        <div class="burger" id="burger">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>
+    <!-- <div class="container">
+    
+        Navigation Menu
+        <nav id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html" style="color: #3b82f6;">Home</a></li>
+                <li>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html">Items</a>
+                    <div class="dropdown-content">
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\graphicscard.html"style="color: #3b82f6;">Graphics Card</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\motherboards.html">Motherboard</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\processors.html">Processors</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\powersupply.html">Power supply</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\monitor.html">Monitor</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\ssd.html">SSD</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\memory.html">RAM</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\keyboard.html">Keyboards</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\mouse.html">Mouse</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\case.html">Pc Case</a>
+                    </div>
+                </li>
+                <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html">About us</a></li>
+                <li><a href="contact.html" class="cta"><button>Contacts</button></a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+
+    </div> -->
+
+<script>
+    const burger = document.getElementById('burger');
+const navLinks = document.querySelector('.nav-links');
+const navLinkItems = document.querySelectorAll('.nav-links a');
+
+// Toggle mobile menu
+burger.addEventListener('click', (e) => {
+e.stopPropagation();
+navLinks.classList.toggle('active');
+});
+
+// Close menu on link click
+navLinkItems.forEach(link => {
+link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+});
+});
+
+// Close when clicking outside
+document.addEventListener('click', (e) => {
+if (!navLinks.contains(e.target) && !burger.contains(e.target)) {
+    navLinks.classList.remove('active');
+}
+});
+
+</script>
+    <h1 class="hd">PC CASE</h1>
+    <div class="product-grid">
+
+      
+        <div class="product" style="background-color: #e0e7ff" data-name="product1">
+            <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ANTEC AX20 Elite Black RGB Tempered Glass Mid Tower Gaming Chassis .png" alt="c1" >
+            <div class="definition">
+                <p>₱2,050.00 <br>ANTEC AX20 Elite Black RGB Tempered Glass Mid Tower Gaming Chassis</p>
+            </div>
+        </div>
+   
+    
+        <div class="product" style="background-color: #e0e7ff" data-name="product2">
+            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ANTEC CX200M RGB ELITE DUAL CHAMBER .png" alt="c1">
+            <div class="definition">
+                <p>3,100.00 <br>ANTEC CX200M RGB ELITE DUAL CHAMBER</p> 
+            </div>
+        </div>
+    
+
+    
+        <div class="product" style="background-color: #e0e7ff" data-name="product3">
+            <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ANTEC NX292 Black RGB NX Series-Mid Tower Gaming Case.png" alt="c1">
+            <div class="definition">
+                <p>₱2,600.00 <br>ANTEC NX292 Black RGB NX Series-Mid Tower Gaming Case</p> 
+            </div>
+            </div>
+     
+
+        
+            <div class="product" style="background-color: #e0e7ff" data-name="product4">
+                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ANTEC NX292 White Tempered Glass RGB Mid Tower Gaming Chassis .png" alt="c1">
+                <div class="definition">
+                    <p>₱2,350.00 <br>ANTEC NX292 White Tempered Glass RGB Mid Tower Gaming Chassis</p> 
+                </div>
+                </div>
+            
+
+               
+                <div class="product" style="background-color: #e0e7ff" data-name="product5">
+                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ASUS TUF Gaming GT302 ARGB Tempered Glass Gaming Chassis (Black).png" alt="c1">
+                    <div class="definition">
+                        <p>₱7,350.00 <br>ASUS TUF Gaming GT302 ARGB Tempered Glass Gaming Chassis (Black)</p> 
+                    </div>
+                    </div>
+          
+
+                
+                    <div class="product" style="background-color: #e0e7ff" data-name="product6">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ASUS TUF Gaming GT501 ATX Mid Tower Case.png" alt="c1">
+                        <div class="definition">
+                            <p>₱7,400.00 <br>ASUS TUF Gaming GT501 ATX Mid Tower Case</p> 
+                        </div>
+                        </div>
+                
+
+                     
+                        <div class="product" style="background-color: #e0e7ff" data-name="product7">
+                            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\COOLER MASTER MASTERBOX .png" alt="c1">
+                            <div class="definition">
+                                <p>₱2,800.00 <br>COOLER MASTER MASTERBOX</p> 
+                            </div>
+                            </div>
+                                
+                        
+                        
+                     
+                            <div class="product" style="background-color: #e0e7ff" data-name="product8">
+                                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\MSI Mag Forge 100R Tempered Glass ARGB Fans Mid-Tower Chassis (Black).png" alt="c1">
+                                <div class="definition">
+                                    <p>₱3,400.00 <br>MSI Mag Forge 100R Tempered Glass ARGB Fans Mid-Tower Chassis (Black)</p> 
+                                </div>
+                                </div>
+                         
+
+                            
+                        
+                            <div class="product" style="background-color: #e0e7ff" data-name="product9">
+                                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\NZXT H5 Flow (CC-H51FB-01) Tempered Glass ATX Mid Tower Chassis (Black).png" alt="c1">
+                                <div class="definition">
+                                    <p>₱4,350.00 <br>NZXT H5 Flow (CC-H51FB-01) Tempered Glass ATX Mid Tower Chassis (Black)</p> 
+                                </div>
+                                </div>
+                                <div class="product" style="background-color: #e0e7ff" data-name="product10">
+                                  <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\TRENDSONIC Neptune MESH Tempered Glass RGB Chassis.png" alt="c1">
+                                  <div class="definition">
+                                      <p>₱2,050.00 <br>TRENDSONIC Neptune MESH Tempered Glass RGB Chassis</p> 
+                                  </div>
+                                  </div>
+                         
+<!-- POP UPP -->
+                            
+                       
+                       
+                                
+                                <div class="products-preview">
+                                  <div class="preview" data-target="product1">
+                                      <i class="fa fa-times"></i>
+                                      <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ANTEC AX20 Elite Black RGB Tempered Glass Mid Tower Gaming Chassis .png" alt="ANTEC AX20 Elite Black RGB">
+                                      <h3>ANTEC AX20 Elite Black RGB Tempered Glass Mid Tower Gaming Chassis</h3>
+  
+                                      <p class="description">This is a high-quality gaming chassis with RGB lighting and tempered glass panels</p>
+                                      <div class="price">₱2,050.00</div>
+                                      <div class="buttons">
+                                          <a href="https://pcx.com.ph/collections/pc-tower-cases/products/antec-ax20-elite-black-rgb-tempered-glass-mid-tower-gaming-chassis-with-free-gaming-antec-mouse-pad
+                                          " target="_blank" class="cart">See More</a>
+                                      </div>
+                                  </div>
+                              
+                                  <div class="preview" data-target="product2">
+                                      <i class="fa fa-times"></i>
+                                      <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ANTEC CX200M RGB ELITE DUAL CHAMBER .png">
+                                      <h3>ANTEC CX200M RGB ELITE DUAL CHAMBER</h3>
+                                 
+                                      <p class="description">Standing out with its full-view design on the seamless left and front panel, CX200M RGB ELITE is the ideal enclosure for your M-ATX setup.</p>
+                                      <div class="price">₱3,100,00</div>
+                                      <div class="buttons">
+                                        <a href="https://pcx.com.ph/collections/pc-tower-cases/products/antec-cx200m-rgb-elite-dual-chamber-mini-tower-gaming-case-white
+                                        " target="_blank" class="cart">See More</a>
+                                    </div>
+                                  </div>
+                              
+                              
+                                  <div class="preview" data-target="product3">
+                                      <i class="fa fa-times"></i>
+                                      <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ANTEC NX292 Black RGB NX Series-Mid Tower Gaming Case.png">
+                                      <h3>ANTEC NX292 Black RGB NX Series-Mid Tower Gaming Case</h3>
+                               
+                                      <p class="description">The NX292 mid-tower gaming case effortlessly combines a bevy of in-demand features</p>
+                                      <div class="price">₱2,600.00
+                                      </div>
+                                      <div class="buttons">
+                                        <a href="https://pcx.com.ph/collections/pc-tower-cases/products/antec-nx292-black-rgb-nx-series-mid-tower-gaming-case-with-free-mouse-pad
+                                        " target="_blank" class="cart">See More</a>
+                                    </div>
+                                  </div>  
+                              
+                                    <div class="preview" data-target="product4">
+                                      <i class="fa fa-times"></i>
+                                      <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ANTEC NX292 White Tempered Glass RGB Mid Tower Gaming Chassis .png">
+                                      <h3>ANTEC NX292 White Tempered Glass RGB Mid Tower Gaming Chassis</h3>
+                                  
+                                      <p class="description">The NX292 White mid-tower gaming case effortlessly combines a bevy of in-demand features</p>
+                                      <div class="price">₱2,750.00</div>
+                                      <div class="buttons">
+                                        <a href="https://pcx.com.ph/products/antec-nx292-white-tempered-glass-rgb-mid-tower-gaming-chassis" target="_blank" class="cart">See More</a>
+                                    </div>
+                                  </div>    
+                                  
+                                  <div class="preview" data-target="product5">
+                                      <i class="fa fa-times"></i>
+                                      <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ASUS TUF Gaming GT302 ARGB Tempered Glass Gaming Chassis (Black).png">
+                                      <h3>ASUS TUF Gaming GT302 ARGB Tempered Glass Gaming Chassis (Black)</h3>
+                                   
+                                      <p class="description">Square-type front panel engineered to maximize airflow efficiency
+                                        Unique four 140 x 28 mm ARGB fan solution to deliver the ultimate in thermal performance</p>
+                                      <div class="price">₱7,350.00</div>
+                                      <div class="buttons">
+                                        <a href="https://pcx.com.ph/collections/new-products/products/asus-tuf-gaming-gt302-argb-tempered-glass-gaming-chassis-black
+                                        " target="_blank" class="cart">See More</a>
+                                    </div>
+                                  </div>   
+                                  
+                                  <div class="preview" data-target="product6">
+                                      <i class="fa fa-times"></i>
+                                      <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ASUS TUF Gaming GT501 ATX Mid Tower Case.png" alt="ASUS TUF Gaming GT501 ATX Mid Tower Case.png">
+                                      <h3>ASUS TUF Gaming GT501 ATX Mid Tower Case.png</h3>
+                                     
+                                      <p class="description">TUF Gaming GT501 is crafted from up to 1.5mm-thick galvanized steel for enhanced durability in understated industrial style, and has a special coating that resists scuffs and scratches. </p>
+                                      <div class="price">₱7,100.00</div>
+                                      <div class="buttons">
+                                        <a href="https://pcx.com.ph/collections/pc-tower-cases/products/asus-tuf-gaming-gt501-atx-mid-tower-case
+                                        " target="_blank" class="cart">See More</a>
+                                    </div>
+                                  </div>    
+                                  
+                                  <div class="preview" data-target="product7">
+                                      <i class="fa fa-times"></i>
+                                      <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\COOLER MASTER MASTERBOX .png" alt="COOLER MASTER MASTERBOX">
+                                      <h3>COOLER MASTER MASTERBOX</h3>
+                                  
+                                      <p class="description">Brushed Front Panel
+                                        Hexagon Gleam
+                                        Mesh Intakes
+                                        With/Without ODD Support
+                                        Versatile Cooling Options
+                                        Breathable Power Supply Shroud
+                                        Room For Upgrades
+                                        Removable HDD Cage
+                                        </p>
+                                      <div class="price">₱2,800.00</div>
+                                      <div class="buttons">
+                                        <a href="https://pcx.com.ph/collections/pc-tower-cases/products/cooler-master-masterbox-mb600l-v1-v2-blk-tg
+                                        " target="_blank" class="cart">See More</a>
+                                    </div>
+                                  </div>
+                              
+                                  <div class="preview" data-target="product8">
+                                      <i class="fa fa-times"></i>
+                                      <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\MSI Mag Forge 100R Tempered Glass ARGB Fans Mid-Tower Chassis (Black).png" alt="MSI Mag Forge 100R Tempered Glass ARGB Fans Mid-Tower Chassis (Black)">
+                                      <h3>MSI Mag Forge 100R Tempered Glass ARGB Fans Mid-Tower Chassis (Black)</h3>
+                                    
+                                      <p class="description">MSI MAG Forge 100R chassis can support up to ATX motherboard, side panel of 4mm tempered glass, up to 140 mm RGB fan, reserved cooling space and front USB 3.2
+                                      </p>
+                                      <div class="price">₱3,400.00</div>
+                                      <div class="buttons">
+                                        <a href="https://pcx.com.ph/collections/pc-tower-cases/products/msi-mag-forge-100r-tempered-glass-argb-fans-mid-tower-chassis-black
+                              " target="_blank" class="cart">See More</a>
+                                    </div>
+                                  </div>    
+                                  
+                                  <div class="preview" data-target="product9">
+                                      <i class="fa fa-times"></i>
+                                      <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\NZXT H5 Flow (CC-H51FB-01) Tempered Glass ATX Mid Tower Chassis (Black).png" alt="NZXT H5 Flow (CC-H51FB-01) Tempered Glass ATX Mid Tower Chassis (Black)">
+                                      <h3>NZXT H5 Flow (CC-H51FB-01) Tempered Glass ATX Mid Tower Chassis (Black)</h3>
+                                    
+                                      <p class="description">The H5 Flow features a perforated front panel to generate an extra dimension of airflow for maximum cooling potential</p>
+                                      <div class="price">₱4,350.00</div>
+                                      <div class="buttons">
+                                        <a href="https://pcx.com.ph/collections/pc-tower-cases/products/nzxt-h5-flow-cc-h51fb-01-tempered-glass-atx-mid-tower-chassis-black
+                                        " target="_blank" class="cart">See More</a>
+                                    </div>
+                                  </div>    
+                                  
+                                  <div class="preview" data-target="product10">
+                                      <i class="fa fa-times"></i>
+                                      <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\TRENDSONIC Neptune MESH Tempered Glass RGB Chassis.png" alt="TRENDSONIC Neptune MESH Tempered Glass RGB Chassis">
+                                      <h3>TRENDSONIC Neptune MESH Tempered Glass RGB Chassis</h3>
+                                
+                                      <p class="description">Full Metal Mesh Front Panel Keep the Best Ventilationx
+                                        Control Panel with 4 USB Ports and Power Button on Top for User-friendly</p>
+                                      <div class="price">₱2,050.00</div>
+                                      <div class="buttons">
+                                        <a href="https://pcx.com.ph/collections/pc-tower-cases/products/trendsonic-neptune-mesh-tempered-glass-rgb-chassis" target="_blank" class="cart">See More</a>
+                                    </div>
+                                  </div>
+                                </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+          <img class="logo" src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\logo2.png" alt="logo" />
+           <h4>GearByte</h4>
+           <div class="icons">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+           </div>
+            </div>
+          <div class="footer-content">
+            <h4>For more Inquiries visit this website</h4>
+            <p><a href="https://easypc.com.ph/?srsltid=AfmBOooT-pG1UVrnCeNq0ah7m8koZ74Pl7_VkoFnwNeT1hZ8pUmgnhQs" target="_blank" >PcEasy</a></p>
+            <p><a href="https://pcx.com.ph/" target="_blank" >PcExpress</a></p>
+          </div>  
+          <div class="footer-content">
+            <h4>Quick links</h4>
+            <ul>
+              <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">Home</a></li>
+              <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html">Items</a></li>
+              <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html">About us</a></li>
+               
+            </ul>
+          </div>
+
+  
+    </footer>
+<p style="color: white;text-align: center;background-color: red;margin: 0px;">Disclaimer: This website is for educational purposes only</p>
+</body>
+</html>

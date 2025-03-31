@@ -1,0 +1,2249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GearByte</title>
+  <link rel="stylesheet" href="section.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <script src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">
+                <img class="logo" src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\logo2.png" alt="logo">
+            </a>
+            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">
+                <h1 class="logo1"><b>GearByte</b></h1>
+            </a>
+        </div>
+    
+        <nav id="nav-menu">
+            <ul class="nav-links"   >
+                <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">Home</a></li>
+                <li>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html"style="color: #3b82f6;">Items</a>
+                    <div class="dropdown-content">
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\graphicscard.html">Graphics Card</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\motherboards.html">Motherboard</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\processors.html">Processors</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\powersupply.html">Power supply</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\monitor.html">Monitor</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\ssd.html">SSD</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\memory.html">RAM</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\keyboard.html">Keyboards</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\mouse.html">Mouse</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\case.html">Pc Case</a>
+                    </div>
+                </li>
+                <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html">About us</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+        <!-- <div class="container">
+        
+            Navigation Menu
+            <nav id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html" style="color: #3b82f6;">Home</a></li>
+                    <li>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html">Items</a>
+                        <div class="dropdown-content">
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\graphicscard.html"style="color: #3b82f6;">Graphics Card</a>
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\motherboards.html">Motherboard</a>
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\processors.html">Processors</a>
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\powersupply.html">Power supply</a>
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\monitor.html">Monitor</a>
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\ssd.html">SSD</a>
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\memory.html">RAM</a>
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\keyboard.html">Keyboards</a>
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\mouse.html">Mouse</a>
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\case.html">Pc Case</a>
+                        </div>
+                    </li>
+                    <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html">About us</a></li>
+                    <li><a href="contact.html" class="cta"><button>Contacts</button></a></li>
+                </ul>
+                <div class="burger" id="burger">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+    
+        </div> -->
+    
+    <script>
+        const burger = document.getElementById('burger');
+    const navLinks = document.querySelector('.nav-links');
+    const navLinkItems = document.querySelectorAll('.nav-links a');
+    
+    // Toggle mobile menu
+    burger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    navLinks.classList.toggle('active');
+    });
+    
+    // Close menu on link click
+    navLinkItems.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+    });
+    });
+    
+    // Close when clicking outside
+    document.addEventListener('click', (e) => {
+    if (!navLinks.contains(e.target) && !burger.contains(e.target)) {
+        navLinks.classList.remove('active');
+    }
+    });
+    
+    </script>
+    <h1 class="hd">ITEMS</h1>
+    <div class="product-grid">
+<!-- GRAPHICS CARD -->
+      
+<div class="product" style="background-color: #e0e7ff" data-name="product1">
+    <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\MSI_Nvidia_Geforce_RTX_3050_Ventus_2X_XS_OC_8GB_128bit_GDDR6_Videocard_2048x-Photoroom-removebg-preview.png" alt="c1" >
+    <div class="definition">
+        <p>MSI Nvidia Geforce RTX 3050 Ventus 2X XS OC 8GB 128bit GDDR6 Videocard 2048x</p> 
+    </div>
+</div>
+
+
+<div class="product" style="background-color: #e0e7ff" data-name="product2">
+    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\MSI_RTX_4060_Ventus_2x_OC_2048x-Photoroom-removebg-preview.png" alt="c1">
+    <div class="definition">
+        <p>MSI RTX 4060 Ventus 2x OC 2048x</p> 
+    </div>
+</div>
+
+<div class="product" style="background-color: #e0e7ff" data-name="product3">
+    <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS_GT_730-removebg-preview.png" alt="c1">
+    <div class="definition">
+        <p>VC-ASUS GT 730</p> 
+    </div>
+    </div>
+
+    <div class="product" style="background-color: #e0e7ff" data-name="product4">
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS-GT1030-removebg-preview.png" alt="c1">
+        <div class="definition">
+            <p>VC-ASUS GT 1030</p> 
+        </div>
+        </div>
+
+        <div class="product" style="background-color: #e0e7ff" data-name="product5">
+            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS-RTX5070TI-PRIME-16GB-GDDR7-256BIT-6-removebg-preview.png" alt="c1">
+            <div class="definition">
+                <p>VC-ASUS RTX5070TI PRIME 16GB GDDR7 256BIT-6</p> 
+            </div>
+            </div>
+
+            <div class="product" style="background-color: #e0e7ff" data-name="product6">
+                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS-RX6600-DUAL-V3-8GB-DDR6-128BIT-6-removebg-preview.png" alt="c1">
+                <div class="definition">
+                    <p>VC-ASUS RX6600 DUAL V3 8GB DDR6 128BIT-6</p> 
+                </div>
+                </div>
+
+                <div class="product" style="background-color: #e0e7ff" data-name="product7">
+                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS-TUF-RTX4070TI-SUPER-NON-OC-16GB-GDDR-1-removebg-preview.png" alt="c1">
+                    <div class="definition">
+                        <p>VC-ASUS TUF RTX4070TI SUPER NON-OC 16GB GDDR-1</p> 
+                    </div>
+                    </div>
+
+                    <div class="product" style="background-color: #e0e7ff" data-name="product8">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-GIGABYTE-GTX1650-WINDFORCE-OC-4GB-GDDR6-128BIT-1-removebg-preview.png" alt="c1">
+                        <div class="definition">
+                            <p>VC-GIGABYTE GTX1650 WINDFORCE OC-4GB GDDR6 128BIT-1</p> 
+                        </div>
+                        </div>
+
+                    <div class="product" style="background-color: #e0e7ff"data-name="product9">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-MSI-RTX5080-GAMING-TRIO-OC-16GB-GDDR7-256BIT-5-removebg-preview.png" alt="c1">
+                        <div class="definition">
+                            <p>VC-MSI RTX5080 GAMING-TRIO-OC 16GB GDDR7 256BIT-5</p> 
+                        </div>
+                        </div>
+
+                    <div class="product" style="background-color: #e0e7ff"data-name="product10">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-MSI-RTX5090-GAMING-TRIO-OC-32GB-GDDR7-512BIT-5-removebg-preview.png" alt="c1">
+                        <div class="definition">
+                            <p>VC-MSI RTX5090 GAMING-TRIO-OC 32GB GDDR7 512BIT-5</p> 
+                        </div>
+                        </div>    
+<!-- MOTHER BOARD -->
+                            
+                        <div class="product" style="background-color: #e0e7ff"  data-name= "product11">
+                            <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\1.MB-ASUS-PRIME-H510M-K-R2.0-removebg-preview.png" alt="c1" height="200px" width="200px" >
+                            <div class="definition">
+                                <p>MB ASUS PRIME H510M K R2.0</p> 
+                            </div>
+                        </div>
+
+                        <div class="product" style="background-color: #e0e7ff"  data-name= "product12">
+                            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\1.MB-MSI-A320M-A-PRO-removebg-preview.png" alt="c1">
+                            <div class="definition">
+                                <p>MB MSI A320M-A-PRO</p> 
+                            </div>
+                        </div>
+
+                        <div class="product" style="background-color: #e0e7ff"  data-name= "product13">
+                            <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\MB-ASROCK-H610M-HDVM.2-D5-1-removebg-preview (1).png" alt="c1">
+                            <div class="definition">
+                                <p>MB ASROCK H610M HDVM.2-D5-1</p> 
+                            </div>
+                            </div>
+        
+                            <div class="product" style="background-color: #e0e7ff"  data-name= "product14">
+                                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\MB-ASROCKB550MPRO4-4-removebg-preview.png" alt="c1">
+                                <div class="definition">
+                                    <p>MB ASROCK B550M PRO 44</p> 
+                                </div>
+                                </div>
+                            
+
+                            
+                                <div class="product" style="background-color: #e0e7ff" data-name= "product15">
+                                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\MB-ASUS-PRIME-B450M-K-IICSM-1-removebg-preview.png" alt="c1">
+                                    <div class="definition">
+                                        <p>MB ASUS PRIME B450M K-IICSM-1</p> 
+                                    </div>
+                                    </div>
+                        
+
+                                
+                                    <div class="product" style="background-color: #e0e7ff" data-name= "product16">
+                                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\MB-ASUS-PRIME-Z790-P-WIFI-CSM-1-removebg-preview.png" alt="c1">
+                                        <div class="definition">
+                                            <p>MB ASUS PRIME Z790 P WIFI CSM-1</p> 
+                                        </div>
+                                        </div>
+
+                                        <div class="product" style="background-color: #e0e7ff"data-name= "product17">
+                                            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\MB-ASUS-TUF-B560M-PLUS-GAMING-WIFI-1-removebg-preview.png" alt="c1">
+                                            <div class="definition">
+                                                <p>MB ASUS TUF B560M PLUS GAMING WIFI-1</p> 
+                                            </div>
+                                            </div>
+               
+                                            <div class="product" style="background-color: #e0e7ff" data-name= "product18">
+                                                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\MB-GIGABYTE-B650M-D3HP-AX-1-removebg-preview.png" alt="c1">
+                                                <div class="definition">
+                                                    <p>MB GIGABYTE B650M D3HP AX-1</p> 
+                                                </div>
+                                                </div>
+         
+                                            <div class="product" style="background-color: #e0e7ff" data-name= "product19">
+                                                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\MB-GIGABYTE-X870E-AORUS-ELITE-WIFI-7-1-removebg-preview.png" alt="c1">
+                                                <div class="definition">
+                                                    <p>MB GIGABYTE X870E AORUS ELITE WIFI-7-1</p> 
+                                                </div>
+                                                </div>
+          
+                                            <div class="product" style="background-color: #e0e7ff" data-name= "product20">
+                                                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\MB-MSI-PRO-B760M-A-WIFI-DDR4-1-removebg-preview.png" alt="c1">
+                                                <div class="definition">
+                                                    <p>MB MSI PRO B760M A WIFI DDR4-1</p> 
+                                                </div>
+                                                </div>
+                                            
+ <!--PROCESSOR  -->
+                            <div class="product" style="background-color: #e0e7ff" data-name= "product21">
+                                <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\AMD Ryzen™ 5 5500GT Desktop Processor (3.6 up to 4.4GHz).png" alt="c1" >
+                                <div class="definition">
+                                    <p>>AMD Ryzen™ 5 5500GT Desktop Processor (3.6 up to 4.4GHz)</p> 
+                                </div>
+                            </div>
+
+
+                            <div class="product" style="background-color: #e0e7ff" data-name= "product22">
+                                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\AMD Ryzen™ 5 5600G Processor with Radeon™ Graphics  (Up to 4.4GHz).png" alt="c1">
+                                <div class="definition">
+                                    <p>AMD Ryzen™ 5 5600G Processor with Radeon™ Graphics  (Up to 4.4GHz)</p> 
+                                </div>
+                            </div>
+
+
+
+                            <div class="product" style="background-color: #e0e7ff" data-name= "product23">
+                                <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\AMD Ryzen™ 5 8500G Desktop Processor (3.5 up to 5.0GHz).png" alt="c1">
+                                <div class="definition">
+                                    <p>AMD Ryzen™ 5 8500G Desktop Processor (3.5 up to 5.0GHz)</p> 
+                                </div>
+                                </div>
+
+
+
+                                <div class="product" style="background-color: #e0e7ff" data-name= "product24">
+                                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\AMD Ryzen™ 9 9950X (4.3GHz up to 5.7GHz) Desktop Processor.png" alt="c1">
+                                    <div class="definition">
+                                        <p>AMD Ryzen™ 9 9950X (4.3GHz up to 5.7GHz) Desktop Processor</p> 
+                                    </div>
+                                    </div>
+                                
+
+                                
+                                    <div class="product" style="background-color: #e0e7ff" data-name= "product25">
+                                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\Intel® Core™ i5-10400 Processor (12M Cache, up to 4.30 GHz).png" alt="c1">
+                                        <div class="definition">
+                                            <p>Intel® Core™ i5-10400 Processor (12M Cache, up to 4.30 GHz)</p> 
+                                        </div>
+                                        </div>
+                            
+
+                                    
+                                        <div class="product" style="background-color: #e0e7ff" data-name= "product26">
+                                            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\Intel® Core™ i5-14600K Processor (24M Cache, up to 5.30 GHz).png" alt="c1">
+                                            <div class="definition">
+                                                <p>Intel® Core™ i5-14600K Processor (24M Cache, up to 5.30 GHz)</p> 
+                                            </div>
+                                            </div>
+                                    
+
+                                        
+                                            <div class="product" style="background-color: #e0e7ff" data-name= "product27">
+                                                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\Intel® Core™ i7-12700 Processor (25M Cache, up to 4.90 GHz).png" alt="c1">
+                                                <div class="definition">
+                                                    <p>Intel® Core™ i7-12700 Processor (25M Cache, up to 4.90 GHz)</p> 
+                                                </div>
+                                                </div>
+                                                    
+                                            
+                                            
+                                        
+                                                <div class="product" style="background-color: #e0e7ff" data-name= "product28">
+                                                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\Intel® Core™ i7-14700K Processor (33M Cache, up to 5.60 GHz).png" alt="c1">
+                                                    <div class="definition">
+                                                        <p>Intel® Core™ i7-14700K Processor (33M Cache, up to 5.60 GHz)</p> 
+                                                    </div>
+                                                    </div>
+                                            
+
+                                                
+                                            
+                                                <div class="product" style="background-color: #e0e7ff" data-name= "product29">
+                                                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\Intel® Core™ Ultra 7 265K Desktop Processor.png" alt="c1">
+                                                    <div class="definition">
+                                                        <p>Intel® Core™ Ultra 7 265K Desktop Processor</p> 
+                                                    </div>
+                                                    </div>
+                                            
+
+                                                
+                                        
+                                                <div class="product" style="background-color: #e0e7ff" data-name= "product30">
+                                                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\Intel® Core™ Ultra 9 285K Desktop Processor.png" alt="c1">
+                                                    <div class="definition">
+                                                        <p>Intel® Core™ Ultra 9 285K Desktop Processor</p> 
+                                                    </div>
+                                                    </div>
+<!-- POWER SUPPLY -->
+<div class="product" style="background-color: #e0e7ff" data-name= "product31">
+    <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\1.PS-ASUS-TUF-750W-80_-BRONZE-NON-MOD-removebg-preview.png" alt="c1" >
+    <div class="definition">
+        <p>PS ASUS TUF 750W 80 BRONZE NON MOD</p> 
+    </div>
+</div>
+
+
+<div class="product" style="background-color: #e0e7ff" data-name= "product32">
+    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\3.PS-COOLER-MASTER-MWE-V2-650W-80_-BRONZE-removebg-preview.png" alt="c1">
+    <div class="definition">
+        <p>PS COOLER MASTER MWE V2 650W 80 BRONZE</p> 
+    </div>
+</div>
+
+
+
+<div class="product" style="background-color: #e0e7ff" data-name= "product33">
+    <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\ANTEC-removebg-preview.png" alt="c1">
+    <div class="definition">
+        <p>PS ANTEC NE850G</p> 
+    </div>
+    </div>
+
+
+
+    <div class="product" style="background-color: #e0e7ff" data-name= "product34">
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\PS-ANTECATOMB650650W80_BRNZ-5-removebg-preview.png" alt="c1">
+        <div class="definition">
+            <p>PS ANTEC ATOM B650650 W80 RNZ 5</p> 
+        </div>
+        </div>
+    
+
+       
+        <div class="product" style="background-color: #e0e7ff" data-name= "product35">
+            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\PS-GIGABYTE-850W-GP-UD850GM-80_-GOLD-FULLY-MODULAR-3-removebg-preview.png" alt="c1">
+            <div class="definition">
+                <p>PS GIGABYTE 850W GP UD850GM 80 GOLD FULLY MODULAR 3</p> 
+            </div>
+            </div>
+  
+
+        
+            <div class="product" style="background-color: #e0e7ff" data-name= "product36">
+                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\PS-HUNTKEY-750W-MVP-K750-80_-GOLD-FULL-MOD-1-removebg-preview.png" alt="c1">
+                <div class="definition">
+                    <p>PS HUNTKEY 750W MVP K750 80 GOLD FULL MOD 1</p> 
+                </div>
+                </div>
+        
+
+             
+                <div class="product" style="background-color: #e0e7ff" data-name= "product37">
+                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\PS-INPLAY-GS750-ULTRA-80_-BRNZE-NON-MOD-1-removebg-preview.png" alt="c1">
+                    <div class="definition">
+                        <p>PS INPLAY GS750 ULTRA 80 BRNZE NON MOD 1</p> 
+                    </div>
+                    </div>
+                        
+                
+                
+             
+                    <div class="product" style="background-color: #e0e7ff" data-name= "product38">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\PS-MSI-750W-MPG-A750GF-WHT-80_-GOLD-FULLMOD-1-removebg-preview.png" alt="c1">
+                        <div class="definition">
+                            <p>PS MSI 750W MPG A750GF WHT 80 GOLD FULLMOD 1</p> 
+                        </div>
+                        </div>
+                 
+
+                    
+                
+                    <div class="product" style="background-color: #e0e7ff" data-name= "product39">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\PS-SILVERSTONE-SST-ST60F-ES230-600W-80_-6-removebg-preview.png" alt="c1">
+                        <div class="definition">
+                            <p>PS SILVERSTONE SST ST60F ES230 600W-80-6</p> 
+                        </div>
+                        </div>
+                 
+
+                    
+               
+                    <div class="product" style="background-color: #e0e7ff" data-name= "product40">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\PS-THERMALTAKE-LITEPOWER-650W-2-removebg-preview.png" alt="c1">
+                        <div class="definition">
+                            <p>PS THERMALTAKE LITEPOWER 650W-2</p> 
+                        </div>
+                        </div>
+<!-- MONITOR -->
+ 
+<div class="product" style="background-color: #e0e7ff" data-name= "product41">
+    <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\AOC-removebg-preview.png" alt="c1" >
+    <div class="definition">
+        <p>AOC</p> 
+    </div>
+</div>
+
+
+<div class="product" style="background-color: #e0e7ff" data-name= "product42">
+    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\HP_MONITOR-removebg-preview.png" alt="c1">
+    <div class="definition">
+        <p>HP MONITOR</p> 
+    </div>
+</div>
+
+
+
+<div class="product" style="background-color: #e0e7ff" data-name= "product43">
+    <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\MN-ACER-24.5-KA252Q-E0BI-IPS-2-removebg-preview (1).png" alt="c1">
+    <div class="definition">
+        <p>MN ACER 24.5 KA252Q E0BI IPS-2</p> 
+    </div>
+    </div>
+
+
+
+    <div class="product" style="background-color: #e0e7ff" data-name= "product44">
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\MN-ACER-32-NITRO-ED320QR-S3-CURVED-2-removebg-preview.png" alt="c1">
+        <div class="definition">
+            <p>MN ACER 32-NITRO ED320QR S3 CURVED-2</p> 
+        </div>
+        </div>
+    
+
+       
+        <div class="product" style="background-color: #e0e7ff" data-name= "product45">
+            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\MN-ASUS-15.6-MB166C-ZENSCREEN-IPS-4-removebg-preview.png" alt="c1">
+            <div class="definition">
+                <p>MN ASUS 15.6 MB166C ZENSCREEN IPS-4</p> 
+            </div>
+            </div>
+  
+
+        
+            <div class="product" style="background-color: #e0e7ff" data-name= "product46">
+                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\MN-ASUS-27-VG27AQ3A-TUF-GAMING-IPS-4-removebg-preview.png" alt="c1">
+                <div class="definition">
+                    <p>MN ASUS 27 VG27AQ3A TUF GAMING IPS-4</p> 
+                </div>
+                </div>
+        
+
+             
+                <div class="product" style="background-color: #e0e7ff" data-name= "product47">
+                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\MN-LENOVO-27-R27Q-30-LEGION-GAMING-IPS-2-removebg-preview.png" alt="c1">
+                    <div class="definition">
+                        <p>MN LENOVO 27 R27Q 30 LEGION GAMING IPS-2</p> 
+                    </div>
+                    </div>
+                        
+                
+                
+             
+                    <div class="product" style="background-color: #e0e7ff" data-name= "product48">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\MN-SAMSUNG-27-LS27C330GAEXXP-IPS-1-removebg-preview.png" alt="c1">
+                        <div class="definition">
+                            <p>MN SAMSUNG 27 LS27C330GAEXXP IPS-1</p> 
+                        </div>
+                        </div>
+                 
+
+                    
+                
+                    <div class="product" style="background-color: #e0e7ff" data-name= "product49">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\MN-VIEWPLUS-20-MH-20-1-removebg-preview.png" alt="c1">
+                        <div class="definition">
+                            <p>MN VIEWPLUS 20 MH 20-1</p> 
+                        </div>
+                        </div>
+                 
+
+                    
+               
+                    <div class="product" style="background-color: #e0e7ff" data-name= "product50">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\MSI_MP223_PRO_21.5_100HZ_Vesa_Mounting_Monitor_Black-removebg-preview.png" alt="c1">
+                        <div class="definition">
+                            <p>KEYMSI MP223 PRO 21.5 100HZ Vesa Mounting Monitor Black</p> 
+                        </div>
+                        </div>
+<!-- SSD -->
+<div class="product" style="background-color: #e0e7ff;"data-name="product51">
+    <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\s1.png" alt="c1" >
+    <div class="definition">
+        <p>SAMSUNG 1TB 990 PRO NVME M.2</p> 
+    </div>
+</div>
+
+
+<div class="product" style="background-color: #e0e7ff;"data-name="product52">
+    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\k1.png" alt="c1">
+    <div class="definition">
+        <p>KINGSTON 500GB NV3 M.2 PCIe NVMe Solid State Drive</p> 
+    </div>
+</div>
+
+
+<div class="product" style="background-color: #e0e7ff;"data-name="product53">
+    <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\t1.png" alt="c1">
+    <div class="definition">
+        <p>TEAMGROUP 1TB MP33 M.2 PCIe NVMe (TM8FP6001T0C101)</p> 
+    </div>
+    </div>
+
+
+
+    <div class="product" style="background-color: #e0e7ff;"data-name="product54">
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\s2.png" alt="c1">
+        <div class="definition">
+            <p>SAMSUNG 1TB 990 EVO PCIe NVMe M.2</p> 
+        </div>
+        </div>
+    
+
+       
+        <div class="product" style="background-color: #e0e7ff;"data-name="product55">
+            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\s3.png" alt="c1">
+            <div class="definition">
+                <p>SAMSUNG 500GB 980 M.2 PCIE NVME (MZ-V8V500BW)</p> 
+            </div>
+            </div>
+  
+
+        
+            <div class="product" style="background-color: #e0e7ff;"data-name="product56">
+                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\s4.png" alt="c1">
+                <div class="definition">
+                    <p>SAMSUNG 2TB 990 EVO PCIe NVMe M.2</p> 
+                </div>
+                </div>
+        
+
+             
+                <div class="product" style="background-color: #e0e7ff;"data-name="product57">
+                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\a1.png" alt="c1">
+                    <div class="definition">
+                        <p>ADATA 2TB LEGEND 710 M.2 PCIe NVMe</p> 
+                    </div>
+                    </div>
+                        
+                
+                
+             
+                    <div class="product" style="background-color: #e0e7ff;"data-name="product58">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\h1.png" alt="c1">
+                        <div class="definition">
+                            <p>HIKSEMI 512GB Wave Pro PCIe NVMe M.2</p> 
+                        </div>
+                        </div>
+                 
+
+                    
+                
+                    <div class="product" style="background-color: #e0e7ff;"data-name="product59">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\k2.png" alt="c1">
+                        <div class="definition">
+                            <p>KINGSTON 2TB NV3 M.2 PCIe NVMe</p> 
+                        </div>
+                        </div>
+                 
+
+                    
+               
+                    <div class="product" style="background-color: #e0e7ff;"data-name="product60">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\l1.png" alt="c1">
+                        <div class="definition">
+                            <p>LEXAR 1TB NM610 PRO (LNM610P001T-RNNNG) PCIE M.2 NVME</p> 
+                        </div>
+                        </div>
+<!-- RAM -->
+<div class="product" style="background-color: #e0e7ff" data-name="product61">
+    <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r1.png" alt="c1" >
+    <div class="definition">
+        <p>KINGSTON 16GB DDR4 3200MHZ FURY BEAST</p> 
+    </div>
+</div>
+
+
+<div class="product" style="background-color: #e0e7ff"data-name="product62">
+    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r2.png" alt="c1">
+    <div class="definition">
+        <p>TEAM 16GB DDR4 3200MHZ TFORCE DELTA TUF RGB</p> 
+    </div>
+</div>
+
+
+
+<div class="product" style="background-color: #e0e7ff"data-name="product63">
+    <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r3.png" alt="c1">
+    <div class="definition">
+        <p>TEAMGROUP 1TB MP33 M.2 PCIe NVMe (TM8FP6001T0C101)</p> 
+    </div>
+    </div>
+
+
+
+    <div class="product" style="background-color: #e0e7ff"data-name="product64">
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r4.png" alt="c1">
+        <div class="definition">
+            <p>TEAMGROUP ELITE 16GB DDR4 3200MHz </p> 
+        </div>
+        </div>
+    
+
+       
+        <div class="product" style="background-color: #e0e7ff"data-name="product65">
+            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r5.png" alt="c1">
+            <div class="definition">
+                <p>TRANSCEND 8GB DDR4 PC3200MHZ SODIMM</p> 
+            </div>
+            </div>
+  
+
+        
+            <div class="product" style="background-color: #e0e7ff"data-name="product66">
+                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r6.png" alt="c1">
+                <div class="definition">
+                    <p>KINGSTON 32GB DDR5 6000MT/S</p> 
+                </div>
+                </div>
+        
+
+             
+                <div class="product" style="background-color: #e0e7ff"data-name="product67">
+                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r7.png" alt="c1">
+                    <div class="definition">
+                        <p>Kingston 4GB DDR4 PC3200MHZ</p> 
+                    </div>
+                    </div>
+                        
+                
+                
+             
+                    <div class="product" style="background-color: #e0e7ff"data-name="product68">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r8.png" alt="c1">
+                        <div class="definition">
+                            <p>GSKILLS Trident Z5 Neo RGB DDR5-6000MHz CL32 (2x16GB)</p> 
+                        </div>
+                        </div>
+                 
+
+                    
+                
+                    <div class="product" style="background-color: #e0e7ff"data-name="product69">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\KINGSTON 1TB NV2 PCIE NVME M.2 (SNV2S_1000G) Solid State Drive.png" alt="c1">
+                        <div class="definition">
+                            <p>KINGSTON 2TB NV3 M.2 PCIe NVMe Solid State Drive</p> 
+                        </div>
+                        </div>
+                 
+
+                    
+               
+                    <div class="product" style="background-color: #e0e7ff"data-name="product70">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r10.png" alt="c1">
+                        <div class="definition">
+                            <p>KINGSTON 16GB DDR5 6000MHz FURY Renegade</p> 
+                        </div>
+                        </div>     
+             
+<!-- KEYBOARD -->
+<div class="product" style="background-color: #e0e7ff" data-name="product71">
+    <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\ASUS ROG Falchion Ace (90MP0346-BKUA00) NX Red Switch Gaming Keyboard (Black).png" alt="c1" >
+    <div class="definition">
+        <p>ASUS ROG Falchion Ace (90MP0346-BKUA00) NX Red Switch Gaming Keyboard (Black)</p> 
+    </div>
+</div>
+
+
+<div class="product" style="background-color: #e0e7ff" data-name="product72">
+    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\ASUS ROG Falchion Ace (90MP0346-BKUA00) NX Red Switch Gaming Keyboard (Black)(1).png" alt="c1">
+    <div class="definition">
+        <p>ASUS ROG Falchion Ace (90MP0346-BKUA00) NX Red Switch Gaming Keyboard (Black)</p> 
+    </div>
+</div>
+
+
+
+<div class="product" style="background-color: #e0e7ff" data-name="product73">
+    <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\ASUS TUF Gaming K3 (Blue Switch) RGB Mechanical Gaming Keyboard (Gun Metal).png" alt="c1">
+    <div class="definition">
+        <p>ASUS TUF Gaming K3 (Blue Switch) RGB Mechanical Gaming Keyboard (Gun Metal)</p> 
+    </div>
+    </div>
+
+
+
+    <div class="product" style="background-color: #e0e7ff" data-name="product74">
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\Logitech G PRO X TKL Wireless Gaming Keyboard (Black).png" alt="c1">
+        <div class="definition">
+            <p>Logitech G PRO X TKL Wireless Gaming Keyboard (Black)</p> 
+        </div>
+        </div>
+    
+
+       
+        <div class="product" style="background-color: #e0e7ff" data-name="product75">
+            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\Logitech G PRO X TKL Wireless Gaming Keyboard (White).png" alt="c1">
+            <div class="definition">
+                <p>Logitech G PRO X TKL Wireless Gaming Keyboard (White)</p> 
+            </div>
+            </div>
+  
+
+        
+            <div class="product" style="background-color: #e0e7ff" data-name="product76">
+                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\LOGITECH G213 Prodigy RGB Gaming Keyboard.png" alt="c1">
+                <div class="definition">
+                    <p>LOGITECH G213 Prodigy RGB Gaming Keyboard</p> 
+                </div>
+                </div>
+        
+
+             
+                <div class="product" style="background-color: #e0e7ff" data-name="product77">
+                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\LOGITECH G512 Carbon RGB Mechanical GX Blue Switch (CLICKY) Gaming Keyboard.png" alt="c1">
+                    <div class="definition">
+                        <p>LOGITECH G512 Carbon RGB Mechanical GX Blue Switch Gaming Keyboard</p> 
+                    </div>
+                    </div>
+                        
+                
+                
+             
+                    <div class="product" style="background-color: #e0e7ff" data-name="product78">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\LOGITECH G713 Wired (Tactile) Gaming Keyboard.png" alt="c1">
+                        <div class="definition">
+                            <p>LOGITECH G713 Wired (Tactile) Gaming Keyboard</p> 
+                        </div>
+                        </div>
+                 
+
+                    
+                
+                    <div class="product" style="background-color: #e0e7ff" data-name="product79">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\LOGITECH K270 Full-size Wireless Keyboard.png" alt="c1">
+                        <div class="definition">
+                            <p>LOGITECH K270 Full-size Wireless Keyboard</p> 
+                        </div>
+                        </div>
+                 
+
+                    
+               
+                    <div class="product" style="background-color: #e0e7ff" data-name="product80">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\RAZER BlackWidow V4 75_ White RGB Hot-swappable Mechanical Gaming Keyboard.png" alt="c1">
+                        <div class="definition">
+                            <p>RAZER BlackWidow V4 75 White RGB Hot-swappable Mechanical Gaming Keyboard</p> 
+                        </div>
+                        </div>
+<!-- MOUSE -->
+<div class="product" style="background-color: #e0e7ff" data-name="product81">
+    <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\A4TECH OP-720 OPTICAL USB MOUSE (BLACK).png" alt="c1" >
+    <div class="definition">
+        <p>A4TECH OP-720 OPTICAL USB MOUSE (BLACK)</p> 
+    </div>
+</div>
+
+
+<div class="product" style="background-color: #e0e7ff" data-name="product82">
+    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\ASUS TUF GAMING M3 GEN II (P309) RGB USB Wired Gaming Mouse.png" alt="c1">
+    <div class="definition">
+        <p>ASUS TUF GAMING M3 GEN II (P309) RGB USB Wired Gaming Mouse</p> 
+    </div>
+</div>
+
+
+
+<div class="product" style="background-color: #e0e7ff" data-name="product83">
+    <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\ASUS TUF GAMING M3 RGB Gaming Mouse.png" alt="c1">
+    <div class="definition">
+        <p>ASUS TUF GAMING M3 RGB Gaming Mouse</p> 
+    </div>
+    </div>
+
+
+
+    <div class="product" style="background-color: #e0e7ff" data-name="product84">
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\LOGITECH B100 OPTICAL USB Mouse (Black).png" alt="c1">
+        <div class="definition">
+            <p>LOGITECH B100 OPTICAL USB Mouse (Black)</p> 
+        </div>
+        </div>
+    
+
+       
+        <div class="product" style="background-color: #e0e7ff" data-name="product85">
+            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\LOGITECH M170 Wireless Mouse (Black).png" alt="c1">
+            <div class="definition">
+                <p>LOGITECH M170 Wireless Mouse (Black)</p> 
+            </div>
+            </div>
+  
+
+        
+            <div class="product" style="background-color: #e0e7ff" data-name="product86">
+                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\LOGITECH M221 Silent Wireless Mouse (Charcoal).png" alt="c1">
+                <div class="definition">
+                    <p>LOGITECH M221 Silent Wireless Mouse (Charcoal)</p> 
+                </div>
+                </div>
+        
+
+             
+                <div class="product" style="background-color: #e0e7ff" data-name="product87">
+                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\LOGITECH M240 Silent Bluetooth Mouse (Graphite).png" alt="c1">
+                    <div class="definition">
+                        <p>LOGITECH M240 Silent Bluetooth Mouse (Graphite)</p> 
+                    </div>
+                    </div>
+                        
+                
+                
+             
+                    <div class="product" style="background-color: #e0e7ff" data-name="product88">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\PROMATE CLIX-8 Wireless Mouse (Black).png" alt="c1">
+                        <div class="definition">
+                            <p>PROMATE CLIX-8 Wireless Mouse (Black)</p> 
+                        </div>
+                        </div>
+                 
+
+                    
+                
+                    <div class="product" style="background-color: #e0e7ff" data-name="product89">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\RAPOO M216 Wireless Mouse (Black).png" alt="c1">
+                        <div class="definition">
+                            <p>RAPOO M216 Wireless Mouse (Black)</p> 
+                        </div>
+                        </div>
+                 
+
+                    
+               
+                    <div class="product" style="background-color: #e0e7ff" data-name="product90" >
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\RAZER DEATHADDER Essential Gaming Mouse.png" alt="c1">
+                        <div class="definition">
+                            <p>RAZER DEATHADDER Essential Gaming Mouse</p> 
+                        </div>
+                        </div>
+<!-- PC CASE -->
+<div class="product" style="background-color: #e0e7ff" data-name="product91">
+    <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ANTEC AX20 Elite Black RGB Tempered Glass Mid Tower Gaming Chassis .png" alt="c1" >
+    <div class="definition">
+        <p>₱2,050.00 <br>ANTEC AX20 Elite Black RGB Tempered Glass Mid Tower Gaming Chassis</p>
+    </div>
+</div>
+
+
+<div class="product" style="background-color: #e0e7ff" data-name="product92">
+    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ANTEC CX200M RGB ELITE DUAL CHAMBER .png" alt="c1">
+    <div class="definition">
+        <p>3,100.00 <br>ANTEC CX200M RGB ELITE DUAL CHAMBER</p> 
+    </div>
+</div>
+
+
+
+<div class="product" style="background-color: #e0e7ff" data-name="product93">
+    <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ANTEC NX292 Black RGB NX Series-Mid Tower Gaming Case.png" alt="c1">
+    <div class="definition">
+        <p>₱2,600.00 <br>ANTEC NX292 Black RGB NX Series-Mid Tower Gaming Case</p> 
+    </div>
+    </div>
+
+
+
+    <div class="product" style="background-color: #e0e7ff" data-name="product94">
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ANTEC NX292 White Tempered Glass RGB Mid Tower Gaming Chassis .png" alt="c1">
+        <div class="definition">
+            <p>₱2,350.00 <br>ANTEC NX292 White Tempered Glass RGB Mid Tower Gaming Chassis</p> 
+        </div>
+        </div>
+    
+
+       
+        <div class="product" style="background-color: #e0e7ff" data-name="product95">
+            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ASUS TUF Gaming GT302 ARGB Tempered Glass Gaming Chassis (Black).png" alt="c1">
+            <div class="definition">
+                <p>₱7,350.00 <br>ASUS TUF Gaming GT302 ARGB Tempered Glass Gaming Chassis (Black)</p> 
+            </div>
+            </div>
+  
+
+        
+            <div class="product" style="background-color: #e0e7ff" data-name="product96">
+                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ASUS TUF Gaming GT501 ATX Mid Tower Case.png" alt="c1">
+                <div class="definition">
+                    <p>₱7,400.00 <br>ASUS TUF Gaming GT501 ATX Mid Tower Case</p> 
+                </div>
+                </div>
+        
+
+             
+                <div class="product" style="background-color: #e0e7ff" data-name="product97">
+                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\COOLER MASTER MASTERBOX .png" alt="c1">
+                    <div class="definition">
+                        <p>₱2,800.00 <br>COOLER MASTER MASTERBOX</p> 
+                    </div>
+                    </div>
+                        
+                
+                
+             
+                    <div class="product" style="background-color: #e0e7ff" data-name="product98">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\MSI Mag Forge 100R Tempered Glass ARGB Fans Mid-Tower Chassis (Black).png" alt="c1">
+                        <div class="definition">
+                            <p>₱3,400.00 <br>MSI Mag Forge 100R Tempered Glass ARGB Fans Mid-Tower Chassis (Black)</p> 
+                        </div>
+                        </div>
+                 
+
+                    
+                
+                    <div class="product" style="background-color: #e0e7ff" data-name="product99">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\NZXT H5 Flow (CC-H51FB-01) Tempered Glass ATX Mid Tower Chassis (Black).png" alt="c1">
+                        <div class="definition">
+                            <p>₱4,350.00 <br>NZXT H5 Flow (CC-H51FB-01) Tempered Glass ATX Mid Tower Chassis (Black)</p> 
+                        </div>
+                        </div>
+                        <div class="product" style="background-color: #e0e7ff" data-name="product100">
+                          <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\TRENDSONIC Neptune MESH Tempered Glass RGB Chassis.png" alt="c1">
+                          <div class="definition">
+                              <p>₱2,050.00 <br>TRENDSONIC Neptune MESH Tempered Glass RGB Chassis</p> 
+                          </div>
+                          </div>
+    </div>
+
+<!-- POP UPP -->
+
+<div class="products-preview">
+    <div class="preview" data-target="product1">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\MSI_Nvidia_Geforce_RTX_3050_Ventus_2X_XS_OC_8GB_128bit_GDDR6_Videocard_2048x-Photoroom-removebg-preview.png" alt="gc1">
+        <h3>MSI GeForce RTX™ 3050 VENTUS 2X XS OC 8G GDDR6 128-bit Graphics Card</h3>
+        <p class="description">The GeForce RTX™ 3050 is built with the powerful graphics performance of the NVIDIA Ampere architecture.</p>
+        <div class="price">₱15,300.00</div>
+        <div class="buttons">
+            <a href="https://pcx.com.ph/products/msi-geforce-rtx-3050-ventus-2x-xs-oc-8g-gddr6-128-bit-graphics-card
+            " target="_blank" class="cart">See More</a>
+        </div>
+    </div>
+
+    <div class="preview" data-target="product2">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\MSI_RTX_4060_Ventus_2x_OC_2048x-Photoroom-removebg-preview.png">
+        <h3>MSI GeForce RTX™ 3050 VENTUS 2X XS OC 8G GDDR6 128-bit Graphics Card
+        </h3>
+        <p class="description">The GeForce RTX™ 4060 lets you take on the latest games and apps with the ultra-efficient NVIDIA Ada Lovelace architecture.</p>
+        <div class="price">₱19,900.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/graphics-cards/products/msi-geforce-rtx-4060-ventus-2x-oc-8gb-gddr6-128-bit-graphics-card
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+
+
+    <div class="preview" data-target="product3">
+        <i class="fa fa-times"></i>
+        <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS_GT_730-removebg-preview.png">
+        <h3>ASUS GeForce® GT 730 2GB GDDR5 64-bit Graphics Card
+        </h3>
+        <p class="description">ASUS GeForce® GT 730 2GB GDDR5 low profile graphics card for silent HTPC build (with I/O port brackets)
+        </p>
+        <div class="price">₱3,600.00
+        </div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/graphics-cards/products/asus-geforce-gt-730-2gb-gddr5-64-bit-graphics-card
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>  
+
+      <div class="preview" data-target="product4">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS-GT1030-removebg-preview.png">
+        <h3>ASUS GT1030-SL 2GB BRK GDDR5 64-bit Graphics Card          </h3>
+        <p class="description">ASUS GeForce GT 1030 is the fantastic graphics card from ASUS. Engineered with a highly-efficient 0dB thermal design.</p>
+        <div class="price">₱4,350.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/graphics-cards/products/asus-gt1030-sl-2gb-brk-gddr5-64-bit-graphics-card
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product5">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS-RTX5070TI-PRIME-16GB-GDDR7-256BIT-6-removebg-preview.png">
+        <h3>ASUS Prime GeForce RTX™ 5070 Ti 16GB GDDR7 256-bit Graphics Card          </h3>
+        <p class="description">the GeForce RTX 5070 Ti, an SFF-Ready Enthusiast GeForce Card featuring a 2.5-slot design for expansive compatibility
+        </p>
+        <div class="price">₱65,850.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/graphics-cards/products/asus-prime-geforce-rtx-5070-ti-16gb-gddr7-256-bit-graphics-card
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>   
+    
+    <div class="preview" data-target="product6">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS-RX6600-DUAL-V3-8GB-DDR6-128BIT-6-removebg-preview.png" alt="ASUS TUF Gaming GT501 ATX Mid Tower Case.png">
+        <h3>ASUS Dual Radeon™ RX 6600 V3 8GB GDDR6 128-bit Graphics Card</h3>
+        <p class="description">Delivering the latest AMD RDNA™ 2 architecture experience in its purest form, the ASUS Dual Radeon™ RX 6600 V3 melds performance and simplicity like no other.  </p>
+        <div class="price">₱13,600.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/graphics-cards/products/asus-prime-geforce-rtx-5070-ti-16gb-gddr7-256-bit-graphics-card
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product7">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-ASUS-TUF-RTX4070TI-SUPER-NON-OC-16GB-GDDR-1-removebg-preview.png" alt="COOLER MASTER MASTERBOX">
+        <h3>ASUS TUF Gaming GeForce RTX™ 4070 Ti SUPER
+        </h3>
+        <p class="description">The ASUS TUF Gaming GeForce RTX™ 4070 Ti SUPER 16GB GDDR6X Non-OC Graphics Card is a high-performance GPU designed for gamers and creators 
+          </p>
+        <div class="price">₱63,050.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/asus-tuf-gaming-geforce-rtx-4070-ti-12gb-gddr6x-oc-edition-graphics-card?_pos=1&_sid=936534b13&_ss=r    " target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+
+    <div class="preview" data-target="product8">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-GIGABYTE-GTX1650-WINDFORCE-OC-4GB-GDDR6-128BIT-1-removebg-preview.png">
+        <h3>GIGABYTE GeForce® GTX 1650 WINDFORCE OC 4G </h3>
+        <p class="description">Game, stream, create. The GeForce RTX™ 4060 lets you take on the latest games and apps with the ultra-efficient NVIDIA Ada Lovelace architecture.  </p>
+        <div class="price">₱8,800.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/pc-tower-cases/products/msi-mag-forge-100r-tempered-glass-argb-fans-mid-tower-chassis-black
+" target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product9">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-MSI-RTX5080-GAMING-TRIO-OC-16GB-GDDR7-256BIT-5-removebg-preview.png">
+        <h3>MSI GeForce RTX™ 5080 GAMING TRIO OC </h3>
+        <p class="description">The MSI GeForce RTX™ 5080 GAMING TRIO OC 16GB GDDR7 256-bit Graphics Card is a premium GPU that delivers exceptional performance for gamers, and professionals who need top-tier graphics processing.</p>
+        <div class="price">₱82,850.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/pc-tower-cases/products/nzxt-h5-flow-cc-h51fb-01-tempered-glass-atx-mid-tower-chassis-black
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product10">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\GPU PNG\VC-MSI-RTX5090-GAMING-TRIO-OC-32GB-GDDR7-512BIT-5-removebg-preview.png">
+        <h3>MSI GeForce RTX™ 5090 GAMING TRIO OC 32GB GDDR7 512-bit Graphics Card</h3>
+        <p class="description">The MSI GeForce RTX™ 5090 GAMING TRIO OC 32GB GDDR7 512-bit Graphics Card is an incredibly high-end</p>
+        <div class="price">₱164,450.00
+        </div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/graphics-cards/products/msi-geforce-rtx-5090-gaming-trio-oc-32gb-gddr7-512-bit-graphics-card
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+
+    <div class="preview" data-target="product11">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\1.MB-ASUS-PRIME-H510M-K-R2.0-removebg-preview.png" alt="gc1">
+        <h3>ASUS PRIME B450M-K II/CSM mATX Motherboard</h3>
+        <p class="description">The ASUS PRIME B450M-K II is a compact and reliable micro-ATX motherboard designed to deliver solid performance for budget-conscious PC builders.</p>
+        <div class="price">₱4,000.00</div>
+        <div class="buttons">
+            <a href="https://pcx.com.ph/products/asus-prime-b450m-k-ii-csm-matx-motherboard" target="_blank" class="cart">See More</a>
+        </div>
+    </div>
+
+    <div class="preview" data-target="product12">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\1.MB-MSI-A320M-A-PRO-removebg-preview.png">
+        <h3>MSI A320M-A PRO mATX Motherboard</h3>
+        <p class="description">The MSI A320M-A PRO is an affordable and compact motherboard designed for users building budget-conscious PCs with the latest AMD Ryzen processors. </p>
+        <div class="price">₱2,900.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/motherboards/products/msi-a320m-a-pro-matx-motherboard
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+
+
+    <div class="preview" data-target="product13">
+        <i class="fa fa-times"></i>
+        <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\MB-ASROCK-H610M-HDVM.2-D5-1-removebg-preview (1).png">
+        <h3>ASROCK H610M-HDV/M.2 D5 mATX Motherboard</h3>
+        <p class="description">The ASRock H610M-HDV/M.2 D5 mATX Motherboard is a budget-friendly, compact solution designed to deliver reliable performance for everyday computing and entry-level gaming. 
+        </p>
+        <div class="price">₱4,700.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/asrock-h610m-hdv-m-2-d5-matx-motherboard" target="_blank" class="cart">See More</a>
+      </div>
+    </div>  
+
+    <div class="preview" data-target="product14">
+      <i class="fa fa-times"></i>
+      <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\MB-ASROCKB550MPRO4-4-removebg-preview.png">
+      <h3>ASROCK B550M Pro4 mATX Motherboard
+      </h3>
+      <p class="description">The ASRock B550M Pro4 mATX Motherboard is a feature-packed, compact motherboard designed to deliver robust performance for both gamers and professionals. 
+      </p>
+      <div class="price">₱6,150.00</div>
+      <div class="buttons">
+        <a href="https://pcx.com.ph/products/asrock-b550m-pro4-matx-motherboard" target="_blank" class="cart">See More</a>
+    </div>
+  </div>     
+    
+    <div class="preview" data-target="product15">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\MB-ASUS-PRIME-B450M-K-IICSM-1-removebg-preview.png">
+        <h3>ASUS PRIME B450M-K II/CSM mATX Motherboard</h3>
+        <p class="description">The ASUS PRIME B450M-K II is a compact and reliable micro-ATX motherboard designed to deliver solid performance for budget-conscious PC builders. </p>
+        <div class="price">₱4,000.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/asus-prime-b450m-k-ii-csm-matx-motherboard
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>   
+    
+    <div class="preview" data-target="product16">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\MB-ASUS-PRIME-Z790-P-WIFI-CSM-1-removebg-preview.png">
+        <h3>ASUS PRIME Z790-P WIFI-CSM ATX Motherboard</h3>
+        <p class="description">The ASUS PRIME Z790-P WIFI-CSM ATX motherboard is a high-performance motherboard designed for users who demand the latest in connectivity, and power for their Intel 12th and 13th Gen Core processors. </p>
+        <div class="price">₱14,950.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/asus-prime-z790-p-wifi-csm-atx-motherboard
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product17">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\MB-ASUS-TUF-B560M-PLUS-GAMING-WIFI-1-removebg-preview.png">
+        <h3>ASUS TUF GAMING B560M-PLUS WIFI Micro-ATX
+        </h3>
+        <p class="description">ASUS TUF GAMING B560M-PLUS WIFI takes all the essential elements of the latest Intel® processors and combines them with game-ready features and proven durability. </p>
+        <div class="price">₱8,050.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/motherboards/products/asus-tuf-gaming-b560m-plus-wifi-micro-atx-motherboard
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+
+    <div class="preview" data-target="product18">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\MB-GIGABYTE-B650M-D3HP-AX-1-removebg-preview.png">
+        <h3>GIGABYTE B650M-D3HP AX</h3>
+        <p class="description">The GIGABYTE B650M-D3HP AX is a robust Micro-ATX motherboard designed for gamers, creators, and PC enthusiasts seeking powerful performance with advanced features for AMD Ryzen processors. </p>
+        <div class="price">₱8,550.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/motherboards/products/gigabyte-b650m-d3hp-ax-micro-atx-motherboard
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product19">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\MB-GIGABYTE-X870E-AORUS-ELITE-WIFI-7-1-removebg-preview.png">
+        <h3>GIGABYTE X870E AORUS ELITE WIFI 7 ATX</h3>
+        <p class="description">The GIGABYTE X870E AORUS ELITE WIFI 7 ATX motherboard is designed for power users and enthusiasts who demand exceptional performance, robust features, and future-proofing for the latest Intel processors. </p>
+        <div class="price">₱21,000.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/motherboards/products/gigabyte-x870e-aorus-elite-wifi-7-atx-motherboard
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product20">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MOBO PNG\MB-MSI-PRO-B760M-A-WIFI-DDR4-1-removebg-preview.png">
+        <h3>MSI PRO B760M-A WIFI DDR4 ATX Motherboard</h3>
+        <p class="description">The MSI PRO B760M-A WIFI DDR4 is an ATX motherboard designed for professionals and users who need a reliable, high-performance platform to power their Intel 12th and 13th Gen Core processors.</p>
+        <div class="price">₱8,250.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard?_pos=1&_sid=9342d99ec&_ss=r " target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+    <div class="preview" data-target="product21">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\AMD Ryzen™ 5 5500GT Desktop Processor (3.6 up to 4.4GHz).png" alt="gc1">
+        <h3>AMD Ryzen™ 5 5500GT</h3>
+        <p class="description">AMD RYZEN 5 5500GT (3.6GHZ UP TO 4.4GHZ) UNLOCKED/WRAITH STEALTH/6CORES/12THREADS/VEGA7/16MB L3/3MB L2 CACHE/7NM/SOCKET AM4 PROCESSOR</p>
+        <div class="price">₱8,200.00</div>
+        <div class="buttons">
+            <a href="https://pcx.com.ph/products/amd-ryzen-5-5500gt-desktop-processor-3-6-up-to-4-4ghz?_pos=29&_sid=e5c283bc6&_ss=r" target="_blank" class="cart">See More</a>
+        </div>
+    </div>
+  
+    <div class="preview" data-target="product22">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\AMD Ryzen™ 5 5600G Processor with Radeon™ Graphics  (Up to 4.4GHz).png">
+        <h3>AMD Ryzen™ 5 5600G Processor with Radeon™ Graphics</h3>
+        <p class="description">RYZEN 5 560G (3.9GHZ) UNLOCKED W COOLER FAN/6CORES/12THREADS/VEGA7/16MB L3/3MB L2 CACHE/7NM</p>
+        <div class="price">₱7,650.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/amd-ryzen-5-5600g-3-9ghz-processor?_pos=1&_sid=e55d876b4&_ss=r
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+  
+  
+    <div class="preview" data-target="product23">
+        <i class="fa fa-times"></i>
+        <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\AMD Ryzen™ 5 8500G Desktop Processor (3.5 up to 5.0GHz).png">
+        <h3>AMD Ryzen™ 5 8500G</h3>
+        <p class="description">AMD RYZEN 5 8500G(3.5 UP TO 5.0GHZ)UNLOCKED/WRAITH STEALTH/DDR5/6CORES/12THREADS/16MB L3/6MB L2 CACHE/AMD RADEON™ GRAPHICS/4NM SOCKET AM5 PROCESSOR
+        </p>
+        <div class="price">₱9,700.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/amd-ryzen-5-8500g-desktop-processor-3-5-up-to-5-0ghz?_pos=17&_sid=23f786821&_ss=r
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>  
+  
+    <div class="preview" data-target="product24">
+      <i class="fa fa-times"></i>
+      <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\AMD Ryzen™ 9 9950X (4.3GHz up to 5.7GHz) Desktop Processor.png">
+      <h3>AMD Ryzen™ 9 9950X
+      </h3>
+      <p class="description"> It doesn’t matter if you’re working hard or gaming hard, the AMD Ryzen™ 9950X processor is an absolute powerhouse. 
+      </p>
+      <div class="price">₱42,350.00</div>
+      <div class="buttons">
+        <a href="https://pcx.com.ph/products/amd-ryzen-9-9950x3d-gaming-and-content-creation-processor?_pos=2&_sid=744875f27&_ss=r
+        " target="_blank" class="cart">See More</a>
+    </div>
+  </div>     
+    
+    <div class="preview" data-target="product25">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\Intel® Core™ i5-10400 Processor (12M Cache, up to 4.30 GHz).png">
+        <h3>Intel® Core™ i5-10400 Processor</h3>
+        <p class="description">INTEL
+          CORE I5-10400 (2.90GHZ) COMETLAKE/10TH GEN/12MB/6CORES/12THREADS/630 HDGFX
+          14NM LGA1200 PROCESSOR
+           </p>
+        <div class="price">₱7,800.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/intel-core-i5-10400-processor-12m-cache-up-to-4-30-ghz?_pos=8&_sid=e55d876b4&_ss=r
+  
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>   
+    
+    <div class="preview" data-target="product26">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\Intel® Core™ i5-14600K Processor (24M Cache, up to 5.30 GHz).png">
+        <h3>Intel® Core™ i5-14600K Processor</h3>
+        <p class="description">INTEL CORE I5-14600K (UP TO 5.3GHZ) RAPTOR LAKE/24MB/14CORES/20THREADS/770 HDGFX/10NM/ LGA1700 PROCESSOR</p>
+        <div class="price">₱16,150.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/intel-core-i5-14600k-processor-24m-cache-up-to-5-30-ghz?_pos=2&_sid=e55d876b4&_ss=r
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product27">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\Intel® Core™ i7-12700 Processor (25M Cache, up to 4.90 GHz).png">
+        <h3>Intel® Core™ i7-12700 Processor</h3>
+        <p class="description">INTEL CORE I7-12700 (1.6GHZ UP TO 4.90GHZ) ALDER LAKE/12TH GEN/25MB/12CORES/20THREADS/770 HDGFX/10NM/LGA1700 PROCESSOR</p>
+        <div class="price">₱16,950.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/intel-core-i7-12700-processor?_pos=13&_sid=23f786821&_ss=r
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+  
+    <div class="preview" data-target="product28">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\Intel® Core™ i7-14700K Processor (33M Cache, up to 5.60 GHz).png">
+        <h3>Intel® Core™ i7-14700K Processor</h3>
+        <p class="description">INTEL
+          CORE I7-14700K (UP TO 5.6GHZ)RAPTOR LAKE/33MB/20CORES/28THREADS/770
+          HDGFX/10NM/ LGA1700 PROCESSOR</p>
+        <div class="price">₱24,550.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/intel-core-i7-14700k-processor-33m-cache-up-to-5-60-ghz?_pos=12&_sid=e55d876b4&_ss=r
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product29">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\Intel® Core™ Ultra 7 265K Desktop Processor.png">
+        <h3>Intel® Core™ Ultra 7 265K</h3>
+        <p class="description">INTEL CORE ULTRA 7 265K (UP TO 5.5GHZ)36MB/20CORES/20THREADS/2GHZ INTELGRAPHICS/3NM/ARROWLAKE/15THGEN/LGA1851 PROCESSOR</p>
+        <div class="price">₱26,400.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/intel-core-ultra-7-265k-destop-processor?_pos=11&_sid=e55d876b4&_ss=r
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product30">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Processor Pics\Intel® Core™ Ultra 9 285K Desktop Processor.png">
+        <h3>Intel® Core™ Ultra 9 285K</h3>
+        <p class="description">INTEL CORE ULTRA 9 285K (UP TO 5.70GHZ)40MB/24CORES/24THREADS/2GHZ INTELGRAPHICS/3NM/ARROWLAKE/15TH GEN/LGA1851 PROCESSOR            </p>
+        <div class="price">₱38,200.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/intel-core-ultra-9-285k-desktop-processor?_pos=9&_sid=e55d876b4&_ss=r
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+    <div class="preview" data-target="product31">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\1.PS-ASUS-TUF-750W-80_-BRONZE-NON-MOD-removebg-preview.png" alt="gc1">
+        <h3>ASUS TUF 750W 80+ Bronze Non-Modular Power Supply</h3>
+        <p class="description">The ASUS TUF 750W 80+ Bronze is a reliable and robust power supply designed for users looking to build a stable, high-performance system</p>
+        <div class="price">₱4,950.00</div>
+        <div class="buttons">
+            <a href="https://pcx.com.ph/collections/power-supplies/products/asus-tuf-750w-80-bronze-non-modular-power-supply" target="_blank" class="cart">See More</a>
+        </div>
+    </div>
+  
+    <div class="preview" data-target="product32">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\3.PS-COOLER-MASTER-MWE-V2-650W-80_-BRONZE-removebg-preview.png">
+        <h3>COOLER MASTER MWE V2 650W 80+ BRONZE Power Supply            </h3>
+        <p class="description">The Cooler Master MWE V2 650W 80+ Bronze is a reliable and efficient power supply designed for mainstream PC builds.
+          </p>
+        <div class="price">₱3,400.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/power-supplies/products/cooler-master-mwe-v2-650w-80-bronze-power-supply
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+  
+  
+    <div class="preview" data-target="product33">
+        <i class="fa fa-times"></i>
+        <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\ANTEC-removebg-preview.png">
+        <h3>ANTEC NEO 850GOLD M 850W 80+ GOLD</h3>
+        <p class="description">The brand-new NeoECO Gold Modular series was born ready for the best DIY-PC experience seekers, and it also serves exceptional performance and outstanding stability
+        </p>
+        <div class="price">₱6,600.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/power-supplies/products/antec-ne-850gold-m-850w-80-gold-full-modular-true-rated-power-supply
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>  
+  
+    <div class="preview" data-target="product34">
+      <i class="fa fa-times"></i>
+      <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\PS-ANTECATOMB650650W80_BRNZ-5-removebg-preview.png">
+      <h3>ANTEC ATOM B650 650W 80+ BRONZE Non-Modular True Rated Power Supply</h3>
+      <p class="description"> The Antec ATOM B650 650W 80+ Bronze Power Supply delivers reliable performance with energy efficiency, ensuring stable power delivery.</p>
+      <div class="price">₱3,150.00
+      </div>
+      <div class="buttons">
+        <a href="https://pcx.com.ph/collections/power-supplies/products/antec-atom-b650-650w-80-bronze-non-modular-true-rated-power-supply
+        " target="_blank" class="cart">See More</a>
+    </div>
+  </div>     
+    
+    <div class="preview" data-target="product35">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\PS-GIGABYTE-850W-GP-UD850GM-80_-GOLD-FULLY-MODULAR-3-removebg-preview.png">
+        <h3>GIGABYTE 850W GP-UD850GM 80+ GOLD </h3>
+        <p class="description">The GIGABYTE 850W GP-UD850GM power supply is a high-quality, energy-efficient PSU designed for users building high-performance systems.</p>
+        <div class="price">₱7,400.00</div>
+        <div class="buttons">
+          <a href="http://pcx.com.ph/collections/power-supplies/products/gigabyte-850w-gp-ud850gm-80-gold-fully-modular-power-supply
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>   
+    
+    <div class="preview" data-target="product36">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\PS-HUNTKEY-750W-MVP-K750-80_-GOLD-FULL-MOD-1-removebg-preview.png">
+        <h3>HUNTKEY 750W MVP K750 80+ GOLD </h3>
+        <p class="description">The Huntkey MVP K750 is a 750W power supply unit with an 80+ Gold efficiency rating. It's a fully modular PSU.</p>
+        <div class="price">₱4,300.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/intel-core-i5-14600k-processor-24m-cache-up-to-5-30-ghz?_pos=2&_sid=e55d876b4&_ss=r
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product37">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\PS-INPLAY-GS750-ULTRA-80_-BRNZE-NON-MOD-1-removebg-preview.png">
+        <h3>NZXT C750 750W 80+</h3>
+        <p class="description">The C750 Bronze offers entry-level high-performance power for any gamer looking to start their PC gaming journey.</p>
+        <div class="price">₱3,900.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/nzxt-c750-750w-80-bronze-non-modular-power-supply
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+  
+    <div class="preview" data-target="product38">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\PS-MSI-750W-MPG-A750GF-WHT-80_-GOLD-FULLMOD-1-removebg-preview.png">
+        <h3>MSI 750W MPG A750GF 80+Gold (WHITE)</h3>
+        <p class="description">The MSI 750W MPG A750GF is a high-performance power supply unit designed for gamers, PC enthusiasts, and professionals who demand reliable, efficient, and stable power delivery. </p>
+        <div class="price">₱6,150.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/power-supplies/products/msi-750w-mpg-a750gf-80-gold-fully-modular-true-rated-power-supply-white
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product39">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\PS-SILVERSTONE-SST-ST60F-ES230-600W-80_-6-removebg-preview.png">
+        <h3>SILVERSTONE SST-ST60F-ES230 600W 80+ True Rated Power Supply</h3>
+        <p class="description">
+          The SILVERSTONE SST-ST60F-ES230 600W is a high-quality power supply that delivers a 600W output and is 80 PLUS certified</p>
+        <div class="price">₱2,550.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/power-supplies/products/silverstone-sst-st60f-es230-600w-80-true-rated-power-supply
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product40">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\PSU PNG\PS-THERMALTAKE-LITEPOWER-650W-2-removebg-preview.png">
+        <h3>THERMALTAKE Litepower 650W Power Supply</h3>
+        <p class="description">The THERMALTAKE Litepower 650W is a reliable and budget-friendly power supply designed for standard PC builds.</p>
+        <div class="price">₱2,400.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/intel-core-ultra-9-285k-desktop-processor?_pos=9&_sid=e55d876b4&_ss=r
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+    <div class="preview" data-target="product41">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\AOC-removebg-preview.png" alt="gc1">
+        <h3>AOC 27" 27B1H2 100HZ Adaptive Sync Monitor (Black)</h3>
+        <p class="description">27B1H2 is a 27 inch monitor, IPS Wide Viewing Angle, 3-sided Frameless Design, Ultra Slim Stylish and Design Flicker Free Eye Protection.</p>
+        <div class="price">₱6,350.00</div>
+        <div class="buttons">
+            <a href="https://pcx.com.ph/collections/computer-monitors/products/aoc-27-27b1h2-100hz-adaptive-sync-monitor-black" target="_blank" class="cart">See More</a>
+        </div>
+    </div>
+  
+    <div class="preview" data-target="product42">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\HP_MONITOR-removebg-preview.png">
+        <h3>HP 23.8" 524SF (94C18AA) IPS Monitor</h3>
+        <p class="description">The HP Series 5 23.8-inch FHD Monitor gives you the flexibility to enjoy entertainment with its sleek, thin-and-light design, vibrant color, deep contrast ratio, and higher refresh rate for a no-screen-tearing experience.</p>
+        <div class="price">₱5,150.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/computer-monitors/products/hp-23-8-524sf-94c18aa-ips-monitor
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+  
+  
+    <div class="preview" data-target="product43">
+        <i class="fa fa-times"></i>
+        <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\MN-ACER-24.5-KA252Q-E0BI-IPS-2-removebg-preview (1).png">
+        <h3>ACER 24.5" KA252Q E0BI IPS Monitor
+        </h3>
+   
+        <p class="description">Say goodbye to stuttering and tearing with AMD Radeon™ FreeSync™ technology and a 100Hz refresh rate. Video editing is smoother as the monitor’s refresh rate is synched to your computer’s framerate.</p>
+        <div class="price">₱4,150.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/computer-monitors/products/acer-24-5-ka252q-e0bi-ips-monitor
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>  
+  
+    <div class="preview" data-target="product44">
+      <i class="fa fa-times"></i>
+      <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\MN-ACER-32-NITRO-ED320QR-S3-CURVED-2-removebg-preview.png">
+      <h3>ACER 32" Nitro ED320QR S3 Curved Gaming Monitor</h3>
+      <p class="description"> TThe Acer 32" Nitro ED320QR S3 Curved Gaming Monitor is designed to deliver an immersive gaming experience with its large, curved screen.</p>
+      <div class="price">₱10,950.00</div>
+      <div class="buttons">
+        <a href="https://pcx.com.ph/collections/computer-monitors/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor
+        " target="_blank" class="cart">See More</a>
+    </div>
+  </div>     
+    
+    <div class="preview" data-target="product45">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\MN-ASUS-15.6-MB166C-ZENSCREEN-IPS-4-removebg-preview.png">
+        <h3>ASUS ZenScreen 15.6" MB166C Portable USB Monitor</h3>
+        <p class="description">ASUS ZenScreen™ is ideal for life on the road. This sleek portable display is light weight and has a slim profile.</p>
+        <div class="price">₱10,550.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/computer-monitors/products/asus-zenscreen-15-6-mb166c-portable-usb-monitor
+  
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>   
+    
+    <div class="preview" data-target="product46">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\MN-ASUS-27-VG27AQ3A-TUF-GAMING-IPS-4-removebg-preview.png">
+        <h3>ASUS TUF Gaming VG27AQ3A 27-inch 180Hz Gaming Monitor</h3>
+      
+        <p class="description">
+          The 27-inch TUF Gaming VG27AQ3A QHD gaming monitor featuring a IPS panel for blistering-fast 180 Hz gaming.
+          </p>
+        <div class="price">₱15,650.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/computer-monitors/products/asus-tuf-gaming-vg27aq3a-27-inch-180hz-gaming-monitor
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product47">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\MN-LENOVO-27-R27Q-30-LEGION-GAMING-IPS-2-removebg-preview.png">
+        <h3>LENOVO 27" R27Q-30 Legion Gaming IPS Monitor</h3>
+  
+        <p class="description">Super-fast 180 Hz1 refresh rate makes all your games run super smoothly on the Legion R27q-30; Get every shot spot on with super responsive 0.5 ms MPRT2 response times.</p>
+        <div class="price">₱13,800.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/computer-monitors/products/lenovo-27-r27q-30-legion-gaming-ips-monitor
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+  
+    <div class="preview" data-target="product48">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\MN-SAMSUNG-27-LS27C330GAEXXP-IPS-1-removebg-preview.png">
+        <h3>The Samsung 27" LS27C330GAEXXP</h3>
+        <p class="description">The Samsung 27" LS27C330GAEXXP IPS Monitor offers a high-quality display with a sleek and modern design, perfect for both work and play. </p>
+        <div class="price">₱6,600.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/computer-monitors/products/samsung-27-ls27c330gaexxp-ips-monitor" target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product49">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\MN-VIEWPLUS-20-MH-20-1-removebg-preview.png">
+        <h3>VIEWPLUS 20" MH-20 75Hz LED Monitor</h3>
+        <p class="description">
+          The SILVERSTONE SST-ST60F-ES230 600W is a high-quality power supply that delivers a 600W output and is 80 PLUS certified</p>
+        <div class="price">₱2,600.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/computer-monitors/products/viewplus-20-mh-20-75hz-led-monitor" target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product50">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\MONITOR PNG\MSI_MP223_PRO_21.5_100HZ_Vesa_Mounting_Monitor_Black-removebg-preview.png">
+        <h3>MSI PRO MP223</h3>
+        <p class="description">The MSI PRO MP223 is a professional-grade monitor designed to meet the needs of various business and productivity tasks.</p>
+        <div class="price">₱3,450.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/computer-monitors/products/msi-mp223-pro-21-5-100hz-vesa-mounting-monitor-black" target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+
+    <div class="preview" data-target="product51">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\s1.png" alt="gc1">
+        <h3>SAMSUNG 1TB 990 PRO NVME M.2</h3>
+        <p class="description">Designed for tech enthusiasts, hardcore gamers and heavy-workload professionals who want blazing fast speed. </p>
+        <div class="price">₱6,300.00</div>
+        <div class="buttons">
+            <a href="https://pcx.com.ph/products/samsung-1tb-990-pro-nvme-m-2-solid-state-drive?_pos=1&_sid=d1188ed32&_ss=r" target="_blank" class="cart">See More</a>
+        </div>
+    </div>
+
+    <div class="preview" data-target="product52">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\k1.png">
+        <h3>KINGSTON 500GB NV3 M.2 PCIe NVMe Solid State Drive</h3>
+        <p class="description">Kingston’s NV3 PCIe 4.0 NVMe SSD is a next-gen storage solution powered by a Gen 4x4 NVMe controller, delivering read/write speeds up to 6,000/5,000MB/s.</p>
+        <div class="price">₱2,250.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/kingston-500gb-nv3-m-2-pcie-nvme-solid-state-drive?_pos=4&_sid=38e292ee3&_ss=r" target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+
+
+    <div class="preview" data-target="product53">
+        <i class="fa fa-times"></i>
+        <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\t1.png">
+        <h3>TEAMGROUP 1TB MP33 M.2 PCIe NVMe (TM8FP6001T0C101)</h3>
+        <p class="description">The new – MP33 M.2 PCIe Solid State Drive. It uses high-speed PCIe Gen3 x4 interface and complies with the NVMe 1.3 standard</p>
+        <div class="price">₱3,300.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/teamgroup-1tb-mp33-m-2-pcie-nvme-tm8fp6001t0c101-solid-state-drive?_pos=11&_sid=38e292ee3&_ss=r" target="_blank" class="cart">See More</a>
+      </div>
+    </div>  
+
+    <div class="preview" data-target="product54">
+      <i class="fa fa-times"></i>
+      <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\s2.png">
+      <h3>SAMSUNG 1TB 990 EVO PCIe NVMe M.2</h3>
+      <p class="description">Up to 5,000/4,200 MB/s of sequential read/write speeds Enhanced power efficiency supporting Modern Standby Meet the demands of gaming, business, and creative work</p>
+      <div class="price">₱5,300.00</div>
+      <div class="buttons">
+        <a href="https://pcx.com.ph/products/samsung-1tb-990-evo-pcie-nvme-m-2-solid-state-drive?_pos=1&_sid=81e4c7640&_ss=r
+        " target="_blank" class="cart">See More</a>
+    </div>
+  </div>     
+    
+    <div class="preview" data-target="product55">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\s3.png">
+        <h3>SAMSUNG 500GB 980 M.2 PCIE NVME (MZ-V8V500BW)</h3>
+        <p class="description">the 980 is the smart choice for outstanding SSD performance, and it's all backed by an NVMe interface and PCIe 3.0 technology.</p>
+        <div class="price">₱3,200.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/samsung-500gb-980-m-2-pcie-nvme-mz-v8v500bw-solid-state-drive?pr_prod_strat=e5_desc&pr_rec_id=d700e9095&pr_rec_pid=8223273451818&pr_ref_pid=8932004954410&pr_seq=uniform" target="_blank" class="cart">See More</a>
+      </div>
+    </div>   
+    
+    <div class="preview" data-target="product56">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\s4.png">
+        <h3>SAMSUNG 2TB 990 EVO PCIe NVMe M.2</h3>
+        <p class="description"> Up to 5,000/4,200 MB/s of sequential read/write speeds Enhanced power efficiency supporting Modern Standby  Meet the demands of gaming, business, and creative work</p>
+        <div class="price">₱9,000.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/samsung-2tb-990-evo-pcie-nvme-m-2-solid-state-drive?pr_prod_strat=e5_desc&pr_rec_id=d700e9095&pr_rec_pid=8932036313386&pr_ref_pid=8932004954410&pr_seq=uniform
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product57">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\a1.png">
+        <h3>ADATA 2TB LEGEND 710 M.2 PCIe NVMe </h3>
+        <p class="description">The LEGEND 710 utilizes PCIe Gen3 x4 and NVMe 1.4 to deliver sustained read and write speeds of up to 2,400/1,800MB per second.</p>
+        <div class="price">₱5,850.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/adata-2tb-legend-710-m-2-pcie-nvme-aleg-710-2tcs-solid-state-drive?_pos=26&_sid=38e292ee3&_ss=r" target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+
+    <div class="preview" data-target="product58">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\h1.png">
+        <h3>HIKSEMI 512GB Wave Pro PCIe NVMe M.2</h3>
+        <p class="description">Not Only High Performance With New Read speed up to 3520MB/s PCIe 3.0 NVMe Technology Ready to Experience Torrent Speed of Your PCs</p>
+        <div class="price">₱1,750.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/hiksemi-512gb-wave-pro-pcie-nvme-m-2-solid-state-drive?_pos=27&_sid=38e292ee3&_ss=r" target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product59">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\k2.png">
+        <h3>KINGSTON 2TB NV3 M.2 PCIe NVMe </h3>
+        <p class="description">
+          Kingston’s NV3 PCIe 4.0 NVMe SSD is a next-gen storage solution powered by a Gen 4x4 NVMe controller, delivering read/write speeds up to 6,000/5,000MB/s.</p>
+        <div class="price">₱6,600.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/kingston-2tb-nv3-m-2-pcie-nvme-solid-state-drive?_pos=35&_sid=38e292ee3&_ss=r" target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product60">
+        <i class="fa fa-times"></i>
+        <img src="c:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\SSD PICS\l1.png">
+        <h3>LEXAR 1TB NM610 PRO (LNM610P001T-RNNNG) PCIE M.2 NVME</h3>
+        <p class="description">Designed to elevate your PC experience with faster load times and transfer speeds from boot-up to shut down, and will boost your computing experience</p>
+        <div class="price">₱3,050.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/lexar-1tb-nm610-pro-lnm610p001t-rnnng-pcie-m-2-nvme-solid-state-drive?_pos=37&_sid=38e292ee3&_ss=r" target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+    <div class="preview" data-target="product61">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r1.png" alt="gc1">
+        <h3>KINGSTON 16GB DDR4 3200MHZ FURY BEAST</h3>
+        <p class="description">PExperience superior performance with Kingston Fury Beast 16GB DDR4 Memory. Operates at 3200MT/s for lightning speed. Upgrade and conquer with this high-speed, stylish memory module.</p>
+        <div class="price">₱1,750.00</div>
+        <div class="buttons">
+            <a href="https://pcx.com.ph/collections/all-products/products/kingston-16gb-ddr4-3200mhz-fury-beast-ram" target="_blank" class="cart">See More</a>
+        </div>
+    </div>
+
+    <div class="preview" data-target="product62">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r2.png">
+        <h3>TEAM 16GB DDR4 3200MHZ TFORCE DELTA TUF RGB</h3>
+        <p class="description">Certified by TUF Gaming Alliance
+          120° ultra-wide-angle lighting effects
+          Asymmetrical, minimalist design
+          Aluminum alloy cooling module with high heat transfer efficiency</p>
+        <div class="price">₱2,650.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/teamgroup-delta-tuf-gaming-alliance-rgb-16gb-ddr4-3200mhz-desktop-memory?pr_prod_strat=e5_desc&pr_rec_id=294e74792&pr_rec_pid=9701939020074&pr_ref_pid=8481625473322&pr_seq=uniform" target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+
+
+    <div class="preview" data-target="product63">
+        <i class="fa fa-times"></i>
+        <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r3.png">
+        <h3>TEAMGROUP 1TB MP33 M.2 PCIe NVMe (TM8FP6001T0C101)</h3>
+        <p class="description">The desktop memory is made with 100% PCR (Post-Consumer Recycled) plastic and 80% recycled aluminum for the RGB light bar and heat spreader.</p>
+        <div class="price">₱6,900.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/teamgroup-32gb-ddr5-6000mhz-delta-rgb-eco-desktop-memory-silver?pr_prod_strat=e5_desc&pr_rec_id=294e74792&pr_rec_pid=9667780903210&pr_ref_pid=8481625473322&pr_seq=uniform target="target = "_blank" class="cart">See More</a>
+      </div>
+    </div>  
+
+    <div class="preview" data-target="product64">
+      <i class="fa fa-times"></i>
+      <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r4.png">
+      <h3>TEAMGROUP ELITE 16GB DDR4 3200MHz </h3>
+      <p class="description">TEAMGROUP’s ELITE series launches an all new DDR4 memory module product, with an operating voltage of only 1.2V, which saves a lot of power consumption. </p>
+      <div class="price">₱2,050.00</div>
+      <div class="buttons">
+        <a href="https://pcx.com.ph/products/teamgroup-elite-16gb-ddr4-3200mhz-memory-module?pr_prod_strat=e5_desc&pr_rec_id=2c5f2497f&pr_rec_pid=9159525826858&pr_ref_pid=9701939020074&pr_seq=uniform
+        " target="_blank" class="cart">See More</a>
+    </div>
+  </div>     
+    
+    <div class="preview" data-target="product65">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r5.png">
+        <h3>TRANSCEND 8GB DDR4 PC3200MHZ SODIMM</h3>
+        <p class="description">1.2V low working voltage
+          3200 Mbps high speeds
+          ETT grade chips manufactured
+          JEDEC compliant and durability guaranteed</p>
+        <div class="price">₱1,050.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/transcend-8gb-ddr4-pc3200mhz-sodimm-ram?_pos=1&_sid=0e3258149&_ss=r" target="_blank" class="cart">See More</a>
+      </div>
+    </div>   
+    
+    <div class="preview" data-target="product66">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r6.png">
+        <h3>KINGSTON 32GB DDR5 6000MT/S</h3>
+        <p class="description">
+          Kingston FURY™ Beast DDR5 RGB lets you overclock in style on next-gen gaming platforms with cutting-edge technology. Experience the superior speed advancements of DDR5.
+          </p>
+        <div class="price">₱6,950.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/kingston-32gb-ddr5-6000mt-s-kf560c30bwea-32-fury-beast-rgb-ram-white?_pos=16&_sid=0e3258149&_ss=r
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product67">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r7.png">
+        <h3>
+          Kingston 4GB DDR4 PC3200MHZ</h3>
+        <p class="description">ValueRAM's KVR32S22S6/4 as a512M x 64-bit (4GB) DDR4-3200 CL22 SDRAM (Synchronous DRAM), 1Rx16, memory module, based on four 512M x 16-bit FBGA components</p>
+        <div class="price">₱995.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/kingston-4gb-ddr4-pc3200mhz-non-ecc-sodimm-kvr32s22s6-4-ram?_pos=18&_sid=0e3258149&_ss=r" target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+
+    <div class="preview" data-target="product68">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r8.png">
+        <h3>GSKILLS Trident Z5 Neo RGB DDR5-6000MHz CL32 (2x16GB)</h3>
+        <p class="description">NTrident Z5 Neo RGB DDR5 memory is designed for ultra-high overclocked performance on DDR5-enabled AMD platforms</p>
+        <div class="price">₱7,150.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/gskills-trident-z5-neo-rgb-f5-6000j3238f16gx2-tz5nr-ddr5-6000mhz-cl32-2x16gb-memory-module?_pos=2&_sid=7d180e21e&_ss=r" target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product69">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\KINGSTON 1TB NV2 PCIE NVME M.2 (SNV2S_1000G) Solid State Drive.png">
+        <h3>KINGSTON 2TB NV3 M.2 PCIe NVMe Solid State Drive</h3>
+        <p class="description">
+          Kingston’s NV3 PCIe 4.0 NVMe SSD is a next-gen storage solution powered by a Gen 4x4 NVMe controller, delivering read/write speeds up to 6,000/5,000MB/s.</p>
+        <div class="price">₱6,600.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/kingston-2tb-nv3-m-2-pcie-nvme-solid-state-drive?_pos=35&_sid=38e292ee3&_ss=r" target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product70">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r10.png">
+        <h3>KINGSTON 16GB DDR5 6000MHz FURY Renegade </h3>
+        <p class="description">Push the limits like never before with Kingston FURY™ Renegade DDR5 memory, designed for extreme performance on next-gen DDR5 platforms. </p>
+        <div class="price">₱3,850.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/kingston-16gb-ddr5-6000mhz-fury-renegade-memory-module-white?_pos=1&_sid=a970d87ba&_ss=r" target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+    <div class="preview" data-target="product71">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\ASUS ROG Falchion Ace (90MP0346-BKUA00) NX Red Switch Gaming Keyboard (Black).png" alt="gc1">
+        <h3>ASUS ROG Falchion Ace (90MP0346-BKUA00) NX Red Switch </h3>
+  
+        <p class="description">ROG Falchion Ace 65% compact gaming keyboard with pre-lubed ROG NX mechanical switches with ROG switch stabilizer.</p>
+        <div class="price">₱4,700.00</div>
+        <div class="buttons">
+            <a href="https://pcx.com.ph/products/asus-rog-falchion-ace-90mp0346-bkua00-nxred-switch-black" target="_blank" class="cart">See More</a>
+        </div>
+    </div>
+  
+    <div class="preview" data-target="product72">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\ASUS ROG Falchion Ace (90MP0346-BKUA00) NX Red Switch Gaming Keyboard (Black)(1).png">
+        <h3>ASUS TUF Gaming K3 (Blue Switch) RGB Mechanical Gaming Keyboard (Gun Metal)</h3>
+  
+        <p class="description">ASUS TUF Gaming K3 is a mechanical RGB keyboard that features durable switches for responsive and reliable performance.</p>
+        <div class="price">₱3,600.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/gaming-keyboards/products/asus-tuf-gaming-k3-blue-switch-rgb-mechanical-gaming-keyboard-gun-metal
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+    <div class="preview" data-target="product73">
+      <i class="fa fa-times"></i>
+      <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\RAZER BlackWidow V4 75_ White RGB Hot-swappable Mechanical Gaming Keyboard.png">
+      <h3>ASUS TUF Gaming K1 RGB Gaming Keyboard
+      </h3>
+     
+      <p class="description">ASUS TUF Gaming K1 is a gaming keyboard that delivers uncompromising performance and exceptional durability. It's equipped with switches that deliver silent tactility with every press</p>
+      <div class="price">₱2,050.00
+      </div>
+      <div class="buttons">
+        <a href="https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard?_pos=1&_sid=9342d99ec&_ss=r " target="_blank" class="cart">See More</a>
+    </div>
+  </div>
+  
+    <div class="preview" data-target="product74">
+        <i class="fa fa-times"></i>
+        <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\Logitech G PRO X TKL Wireless Gaming Keyboard (Black).png">
+        <h3>Logitech G PRO X TKL Wireless Gaming Keyboard (Black)</h3>
+   
+        <p class="description">The next evolution of the PRO keyboard, delivering the championship-trusted performance.
+        </p>
+        <div class="price">₱11,200.00 - ₱12,100.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/gaming-keyboards/products/logitech-g-pro-x-tkl-wireless-gaming-keyboard-black" target="_blank" class="cart">See More</a>
+      </div>
+    </div>  
+  
+    <div class="preview" data-target="product75">
+      <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\Logitech G PRO X TKL Wireless Gaming Keyboard (White).png">
+      <h3>Logitech G PRO X TKL Wireless Gaming Keyboard (White)</h3>
+  
+      <p class="description">The next evolution of the PRO keyboard, delivering the championship-trusted performance.
+      </p>
+      <div class="price">₱11,200.00 - ₱12,100.00</div>
+      <div class="buttons">
+        <a href="https://pcx.com.ph/collections/gaming-keyboards/products/logitech-g-pro-x-tkl-wireless-gaming-keyboard-black" target="_blank" class="cart">See More</a>
+    </div>
+  </div>     
+    
+    <div class="preview" data-target="product76">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\LOGITECH G213 Prodigy RGB Gaming Keyboard.png">
+        <h3>LOGITECH G213 Prodigy RGB Gaming Keyboard</h3>
+    
+        <p class="description">Durable with gaming-grade performance. Tactile Mech-Dome keyswitches are spill-resistant. </p>
+        <div class="price">₱2,606.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/gaming-keyboards/products/logitech-g213-prodigy-rgb-gaming-keyboard
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>   
+    
+    <div class="preview" data-target="product77">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\LOGITECH G512 Carbon RGB Mechanical GX Blue Switch (CLICKY) Gaming Keyboard.png">
+        <h3>LOGITECH G512 Carbon RGB Mechanical GX Blue Switch (CLICKY) Gaming Keyboard</h3>
+  
+        <p class="description">High-performance gaming keyboard featuring your choice of advanced GX mechanical switches.  </p>
+        <div class="price">₱5,795.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/graphics-cards/products/asus-prime-geforce-rtx-5070-ti-16gb-gddr7-256-bit-graphics-card
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product78">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\LOGITECH G713 Wired (Tactile) Gaming Keyboard.png">
+        <h3>LOGITECH G713 Wired (Tactile) Gaming Keyboard
+        </h3>
+    
+        <p class="description">From the Aurora Collection, G713 is a wired, compact TKL keyboard designed for comfort with included cloud-soft palm rest.</p>
+        <div class="price">₱9,350.00 - ₱10,100.00 </div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/gaming-keyboards/products/logitech-g713-wired-tactile-gaming-keyboard" target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+  
+    <div class="preview" data-target="product79">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\LOGITECH K270 Full-size Wireless Keyboard.png">
+        <h3>LOGITECH K270 Full-size Wireless Keyboard</h3>
+      
+        <p class="description">Fully wireless, and ready to connect with your setup, K270 is a plug-and-play keyboard that makes work simple and easy.</p>
+        <div class="price">₱1,100.00 - ₱1,195.00 </div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/logitech-k270-full-size-wireless-keyboard?_pos=1&_sid=04ea8423e&_ss=r
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product80">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\RAZER BlackWidow V4 75_ White RGB Hot-swappable Mechanical Gaming Keyboard.png">
+        <h3>RAZER BlackWidow V4 75% White RGB Hot-swappable Mechanical Gaming Keyboard</h3>
+       
+        <p class="description">For those who crave greater customization and immersion, satisfy your enthusiast needs with the Razer BlackWidow V4 75%—a compact, hot-swappable mechanical keyboard powered by Razer Chroma RGB</p>
+        <div class="price">₱10,830.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/gaming-keyboards/products/razer-blackwidow-v4-75-white-rgb-hot-swappable-mechanical-gaming-keyboard
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    <div class="preview" data-target="product81">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\A4TECH OP-720 OPTICAL USB MOUSE (BLACK).png" alt="gc1">
+        <h3>A4TECH OP-720 OPTICAL USB MOUSE (BLACK)</h3>
+        <p class="description">The A4tech optical wheel Mouse with hyper-fast scrolling for increased productivity.</p>
+        <div class="price">₱190.00</div>
+        <div class="buttons">
+            <a href="https://pcx.com.ph/collections/mice/products/a4tech-op-720-optical-usb-mouse-black" target="_blank" class="cart">See More</a>
+        </div>
+    </div>
+  
+    <div class="preview" data-target="product82">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\A4TECH OP-720 OPTICAL USB MOUSE (BLACK).png">
+        <h3>ASUS TUF GAMING M3 GEN II (P309)</h3>
+        <p class="description">TUF Gaming M3 Gen II is an ultralight 59-gram mouse designed for comfort, even in the most frantic gaming marathons. </p>
+        <div class="price">₱995.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/mice/products/asus-tuf-gaming-m3-gen-ii-p309-rgb-usb-wired-gaming-mouse" target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+  
+  
+    <div class="preview" data-target="product83">
+        <i class="fa fa-times"></i>
+        <img src= "c:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\ASUS TUF GAMING M3 RGB Gaming Mouse.png">
+        <h3>ASUS TUF GAMING M3</h3>
+        <p class="description">TUF Gaming M3 is a compact gaming mouse that delivers the comfort, performance and reliability that gamers demand</p>
+        <div class="price">₱800.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/mice/products/asus-tuf-gaming-m3-rgb-gaming-mouse" target = "_blank" class="cart">See More</a>
+      </div>
+    </div>  
+  
+    <div class="preview" data-target="product84">
+      <i class="fa fa-times"></i>
+      <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\LOGITECH B100 OPTICAL USB Mouse (Black).png">
+      <h3>LOGITECH B100 (Black)</h3>
+      <p class="description">Mouse B100 is built with the same high quality and reliability standards that have made Logitech the global leader for mice and keyboards.</p>
+      <div class="price">₱250.00</div>
+      <div class="buttons">
+        <a href="https://pcx.com.ph/collections/mice/products/logitech-b100-optical-usb-mouse-black" target="_blank" class="cart">See More</a>
+    </div>
+  </div>     
+    
+    <div class="preview" data-target="product85">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\LOGITECH M170 Wireless Mouse (Black).png">
+        <h3>LOGITECH M170 Wireless Mouse (Black)</h3>
+        <p class="description">Meet the Bluetooth® multi-device keyboard specially made for Mac. Take it anywhere—with the comfort and convenience of desktop typing on your iMac, MacBook, iPad, or iPhone.
+        </p>
+        <div class="price">₱555.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/mice/products/logitech-m170-wireless-black-mousex" target="_blank" class="cart">See More</a>
+      </div>
+    </div>   
+    
+    <div class="preview" data-target="product86">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\LOGITECH M221 Silent Wireless Mouse (Charcoal).png">
+        <h3>LOGITECH M221 Silent Wireless Mouse (Charcoal)</h3>
+        <p class="description">
+          Stay productive longer with the comfortable, contoured shape that follows the natural curve of your hand. </p>
+        <div class="price">₱775.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/mice/products/logitech-m221-silent-wireless-mouse-charcoal" target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product87">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\LOGITECH M240 Silent Bluetooth Mouse (Graphite).png">
+        <h3>LOGITECH M240 Silent Bluetooth Mouse (Graphite)</h3>
+        <p class="description">Meet M240 Silent, the reliableBluetooth®mouse that frees up your workspace, connects in seconds, and delivers ultra-quiet productivity that lasts.</p>
+        <div class="price">₱900.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/mice/products/logitech-m240-silent-bluetooth-mouse-graphite" target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+  
+    <div class="preview" data-target="product88">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\PROMATE CLIX-8 Wireless Mouse (Black).png">
+        <h3>PROMATE CLIX-8 Wireless Mouse (Black)</h3>
+        <p class="description">The Promate Clix-8 is a next-generation wireless optical mouse that works on any surface thanks to its use of an 800/1200/1600 DPI optical sensor</p>
+        <div class="price">₱295.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/mice/products/promate-clix-8-wireless-mouse-black" target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product89">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\RAPOO M216 Wireless Mouse (Black).png">
+        <h3>RAPOO M216 Wireless Mouse (Black)</h3>
+        <p class="description">2.4G free transmission and 360 degree receivable Transmission distance up to 10 meters 1000DPI high resolution Max. acceleration: 20G Wireless free to use</p>
+        <div class="price">₱295.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/mice/products/rapoo-m216-wireless-mouse-black" target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product90">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Mouse PIcs\RAZER DEATHADDER Essential Gaming Mouse.png">
+        <h3>RAZER DEATHADDER Essential Gaming Mouse</h3>
+        <p class="description">For more than a decade, the Razer DeathAdder line has been a mainstay in the global esports arena.</p>
+        <div class="price">₱995.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/mice/products/razer-deathadder-essential-gaming-mouse" target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+    <div class="preview" data-target="product91">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ANTEC AX20 Elite Black RGB Tempered Glass Mid Tower Gaming Chassis .png" alt="ANTEC AX20 Elite Black RGB">
+        <h3>ANTEC AX20 Elite Black RGB Tempered Glass Mid Tower Gaming Chassis</h3>
+
+        <p class="description">This is a high-quality gaming chassis with RGB lighting and tempered glass panels</p>
+        <div class="price">₱2,050.00</div>
+        <div class="buttons">
+            <a href="https://pcx.com.ph/collections/pc-tower-cases/products/antec-ax20-elite-black-rgb-tempered-glass-mid-tower-gaming-chassis-with-free-gaming-antec-mouse-pad
+            " target="_blank" class="cart">See More</a>
+        </div>
+    </div>
+
+    <div class="preview" data-target="product92">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ANTEC CX200M RGB ELITE DUAL CHAMBER .png">
+        <h3>ANTEC CX200M RGB ELITE DUAL CHAMBER</h3>
+   
+        <p class="description">Standing out with its full-view design on the seamless left and front panel, CX200M RGB ELITE is the ideal enclosure for your M-ATX setup.</p>
+        <div class="price">₱3,100,00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/pc-tower-cases/products/antec-cx200m-rgb-elite-dual-chamber-mini-tower-gaming-case-white
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+
+
+    <div class="preview" data-target="product93">
+        <i class="fa fa-times"></i>
+        <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ANTEC NX292 Black RGB NX Series-Mid Tower Gaming Case.png">
+        <h3>ANTEC NX292 Black RGB NX Series-Mid Tower Gaming Case</h3>
+ 
+        <p class="description">The NX292 mid-tower gaming case effortlessly combines a bevy of in-demand features</p>
+        <div class="price">₱2,600.00
+        </div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/pc-tower-cases/products/antec-nx292-black-rgb-nx-series-mid-tower-gaming-case-with-free-mouse-pad
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>  
+
+      <div class="preview" data-target="product94">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ANTEC NX292 White Tempered Glass RGB Mid Tower Gaming Chassis .png">
+        <h3>ANTEC NX292 White Tempered Glass RGB Mid Tower Gaming Chassis</h3>
+    
+        <p class="description">The NX292 White mid-tower gaming case effortlessly combines a bevy of in-demand features</p>
+        <div class="price">₱2,750.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/antec-nx292-white-tempered-glass-rgb-mid-tower-gaming-chassis" target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product95">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ASUS TUF Gaming GT302 ARGB Tempered Glass Gaming Chassis (Black).png">
+        <h3>ASUS TUF Gaming GT302 ARGB Tempered Glass Gaming Chassis (Black)</h3>
+     
+        <p class="description">Square-type front panel engineered to maximize airflow efficiency
+          Unique four 140 x 28 mm ARGB fan solution to deliver the ultimate in thermal performance</p>
+        <div class="price">₱7,350.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/new-products/products/asus-tuf-gaming-gt302-argb-tempered-glass-gaming-chassis-black
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>   
+    
+    <div class="preview" data-target="product96">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\ASUS TUF Gaming GT501 ATX Mid Tower Case.png" alt="ASUS TUF Gaming GT501 ATX Mid Tower Case.png">
+        <h3>ASUS TUF Gaming GT501 ATX Mid Tower Case.png</h3>
+       
+        <p class="description">TUF Gaming GT501 is crafted from up to 1.5mm-thick galvanized steel for enhanced durability in understated industrial style, and has a special coating that resists scuffs and scratches. </p>
+        <div class="price">₱7,100.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/pc-tower-cases/products/asus-tuf-gaming-gt501-atx-mid-tower-case
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product97">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\COOLER MASTER MASTERBOX .png" alt="COOLER MASTER MASTERBOX">
+        <h3>COOLER MASTER MASTERBOX</h3>
+    
+        <p class="description">Brushed Front Panel
+          Hexagon Gleam
+          Mesh Intakes
+          With/Without ODD Support
+          Versatile Cooling Options
+          Breathable Power Supply Shroud
+          Room For Upgrades
+          Removable HDD Cage
+          </p>
+        <div class="price">₱2,800.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/pc-tower-cases/products/cooler-master-masterbox-mb600l-v1-v2-blk-tg
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+
+    <div class="preview" data-target="product98">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\MSI Mag Forge 100R Tempered Glass ARGB Fans Mid-Tower Chassis (Black).png" alt="MSI Mag Forge 100R Tempered Glass ARGB Fans Mid-Tower Chassis (Black)">
+        <h3>MSI Mag Forge 100R Tempered Glass ARGB Fans Mid-Tower Chassis (Black)</h3>
+      
+        <p class="description">MSI MAG Forge 100R chassis can support up to ATX motherboard, side panel of 4mm tempered glass, up to 140 mm RGB fan, reserved cooling space and front USB 3.2
+        </p>
+        <div class="price">₱3,400.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/pc-tower-cases/products/msi-mag-forge-100r-tempered-glass-argb-fans-mid-tower-chassis-black
+" target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product99">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\NZXT H5 Flow (CC-H51FB-01) Tempered Glass ATX Mid Tower Chassis (Black).png" alt="NZXT H5 Flow (CC-H51FB-01) Tempered Glass ATX Mid Tower Chassis (Black)">
+        <h3>NZXT H5 Flow (CC-H51FB-01) Tempered Glass ATX Mid Tower Chassis (Black)</h3>
+      
+        <p class="description">The H5 Flow features a perforated front panel to generate an extra dimension of airflow for maximum cooling potential</p>
+        <div class="price">₱4,350.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/pc-tower-cases/products/nzxt-h5-flow-cc-h51fb-01-tempered-glass-atx-mid-tower-chassis-black
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>    
+    
+    <div class="preview" data-target="product100">
+        <i class="fa fa-times"></i>
+        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Computer Case Pics\TRENDSONIC Neptune MESH Tempered Glass RGB Chassis.png" alt="TRENDSONIC Neptune MESH Tempered Glass RGB Chassis">
+        <h3>TRENDSONIC Neptune MESH Tempered Glass RGB Chassis</h3>
+  
+        <p class="description">Full Metal Mesh Front Panel Keep the Best Ventilationx
+          Control Panel with 4 USB Ports and Power Button on Top for User-friendly</p>
+        <div class="price">₱2,050.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/collections/pc-tower-cases/products/trendsonic-neptune-mesh-tempered-glass-rgb-chassis" target="_blank" class="cart">See More</a>
+      </div>
+    </div>
+</div>
+</div>
+
+    <footer class="footer">
+        <div class="footer-content">
+          <img class="logo" src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\logo2.png" alt="logo" />
+           <h4>GearByte</h4>
+           <div class="icons">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+           </div>
+            </div>
+          <div class="footer-content">
+            <h4>For more Inquiries visit this website</h4>
+            <p><a href="https://easypc.com.ph/?srsltid=AfmBOooT-pG1UVrnCeNq0ah7m8koZ74Pl7_VkoFnwNeT1hZ8pUmgnhQs" target="_blank" >PcEasy</a></p>
+            <p><a href="https://pcx.com.ph/" target="_blank" >PcExpress</a></p>
+          </div>  
+          <div class="footer-content">
+            <h4>Quick links</h4>
+            <ul>
+                <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">Home</a></li>
+                <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html"style="color: #3b82f6;">Items</a></li>
+                <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html">About us</a></li>
+               
+            </ul>
+          </div>
+
+    </footer>
+    <P style="text-align: center;background-color: rgba(128, 128, 128, 0.467);margin-top: 0px;">@2025 All Rights Reserved</P>
+<p style="color: white;text-align: center;background-color: red;margin: 0px;">Disclaimer: This website is for educational purposes only</p>
+</body>
+</html>

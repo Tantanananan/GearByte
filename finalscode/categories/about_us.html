@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GearByte</title>
+    <link rel="stylesheet" href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\web.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\practice.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 5px;
+    
+}
+
+.team-member {
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    border: 5px double #1e3a5f; 
+    padding: 50px 20px;
+ 
+    
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #8fa1dc ;
+}
+.mission{
+    text-align: center  ;
+    padding: 50px
+
+}
+.team{
+    text-align: center;
+    padding: 50px
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">
+                <img class="logo" src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\logo2.png" alt="logo">
+            </a>
+            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">
+                <h1 class="logo1"><b>GearByte</b></h1>
+            </a>
+        </div>
+    
+        <nav id="nav-menu">
+            <ul class="nav-links"   >
+                <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">Home</a></li>
+                <li>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html">Items</a>
+                    <div class="dropdown-content">
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\graphicscard.html">Graphics Card</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\motherboards.html">Motherboard</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\processors.html">Processors</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\powersupply.html">Power supply</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\monitor.html">Monitor</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\ssd.html">SSD</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\memory.html">RAM</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\keyboard.html">Keyboards</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\mouse.html">Mouse</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\case.html">Pc Case</a>
+                    </div>
+                </li>
+                <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html" style="color: #3b82f6;">About us</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+        <!-- <div class="container">
+        
+            Navigation Menu
+            <nav id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html" style="color: #3b82f6;">Home</a></li>
+                    <li>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html">Items</a>
+                        <div class="dropdown-content">
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\graphicscard.html">Graphics Card</a>
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\motherboards.html">Motherboard</a>
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\processors.html">Processors</a>
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\powersupply.html">Power supply</a>
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\monitor.html">Monitor</a>
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\ssd.html">SSD</a>
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\memory.html">RAM</a>
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\keyboard.html">Keyboards</a>
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\mouse.html">Mouse</a>
+                            <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\case.html">Pc Case</a>
+                        </div>
+                    </li>
+                    <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html">About us</a></li>
+                    <li><a href="contact.html" class="cta"><button>Contacts</button></a></li>
+                </ul>
+                <div class="burger" id="burger">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+    
+        </div> -->
+    
+    <script>
+        const burger = document.getElementById('burger');
+    const navLinks = document.querySelector('.nav-links');
+    const navLinkItems = document.querySelectorAll('.nav-links a');
+    
+    // Toggle mobile menu
+    burger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    navLinks.classList.toggle('active');
+    });
+    
+    // Close menu on link click
+    navLinkItems.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+    });
+    });
+    
+    // Close when clicking outside
+    document.addEventListener('click', (e) => {
+    if (!navLinks.contains(e.target) && !burger.contains(e.target)) {
+        navLinks.classList.remove('active');
+    }
+    });
+    
+    </script>
+    <section class = "mission">
+        <h2>Our Mission on GEARBYTE</h2>
+        <p>Our mission is to provide the best to our customers.</p>
+    </section>
+    <section class="team">
+        <h2>Our Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="C:\Users\tantan\Desktop\WEBDEV Files\7pm to 11 am walang tulugan guys updated web pa check nalang tan\a bout us\t1.png" alt="Team Member 1">
+                <h3>Carl Jiel Deniega</h3>
+                <p>DATA MANAGER</p>
+            </div>
+            <div class="team-member">
+                <img src="C:\Users\tantan\Desktop\WEBDEV Files\7pm to 11 am walang tulugan guys updated web pa check nalang tan\a bout us\t2.png" alt="Team Member 2">
+                <h3>Christan V. Lamson</h3>
+                <p>UIX DESIGNER</p>
+            </div>
+            <div class="team-member">
+                <img src="C:\Users\tantan\Desktop\WEBDEV Files\7pm to 11 am walang tulugan guys updated web pa check nalang tan\a bout us\t3.png" alt="Team Member 3">
+                <h3>Karl Christian A. Telan</h3>
+                <p>UIX DESIGNER</p>
+            </div>
+            <div class="team-member">
+                <img src="C:\Users\tantan\Desktop\WEBDEV Files\7pm to 11 am walang tulugan guys updated web pa check nalang tan\a bout us\t4.png" alt="Team Member 4">
+                <h3>Jezrel Tolosa</h3>
+                <p>DATA MANAGER</p>
+            </div>
+            <div class="team-member">
+                <img src="C:\Users\tantan\Desktop\WEBDEV Files\7pm to 11 am walang tulugan guys updated web pa check nalang tan\a bout us\t5.png" alt="Team Member 5">
+                <h3>Michael John Sampayan</h3>
+                <p>DATA MANAGER</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+          <img class="logo" src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\logo2.png" alt="logo" />
+           <h4>GearByte</h4>
+           <div class="icons">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+           </div>
+            </div>
+          <div class="footer-content">
+            <h4>For more Inquiries visit this website</h4>
+            <p><a href="https://easypc.com.ph/?srsltid=AfmBOooT-pG1UVrnCeNq0ah7m8koZ74Pl7_VkoFnwNeT1hZ8pUmgnhQs" target="_blank" >PcEasy</a></p>
+            <p><a href="https://pcx.com.ph/" target="_blank" >PcExpress</a></p>
+          </div>  
+          <div class="footer-content">
+            <h4>Quick links</h4>
+            <ul>
+              <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">Home</a></li>
+              <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html">Items</a></li>
+              <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html"style="color: #3b82f6;">About us</a></li>
+            </ul>
+          </div>
+    </footer>
+    <P style="text-align: center;background-color: rgba(128, 128, 128, 0.467);margin-top: 0px;">@2025 All Rights Reserved</P>
+    <p style="color: white;text-align: center;background-color: red;margin: 0px;">Disclaimer: This website is for educational purposes only</p>
+</body>
+</html>

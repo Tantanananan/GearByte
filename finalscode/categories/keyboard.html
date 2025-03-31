@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GearByte</title>
+  <link rel="stylesheet" href="section.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <script src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">
+            <img class="logo" src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\logo2.png" alt="logo">
+        </a>
+        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">
+            <h1 class="logo1"><b>GearByte</b></h1>
+        </a>
+    </div>
+
+    <nav id="nav-menu">
+        <ul class="nav-links"   >
+            <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">Home</a></li>
+            <li>
+                <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html"style="color: #3b82f6;">Items</a>
+                <div class="dropdown-content">
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\graphicscard.html">Graphics Card</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\motherboards.html">Motherboard</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\processors.html">Processors</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\powersupply.html">Power supply</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\monitor.html">Monitor</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\ssd.html">SSD</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\memory.html">RAM</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\keyboard.html"style="color: #3b82f6;">Keyboards</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\mouse.html">Mouse</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\case.html">Pc Case</a>
+                </div>
+            </li>
+            <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html">About us</a></li>
+        </ul>
+        <div class="burger" id="burger">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>
+    <!-- <div class="container">
+    
+        Navigation Menu
+        <nav id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html" style="color: #3b82f6;">Home</a></li>
+                <li>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html">Items</a>
+                    <div class="dropdown-content">
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\graphicscard.html">Graphics Card</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\motherboards.html">Motherboard</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\processors.html">Processors</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\powersupply.html">Power supply</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\monitor.html">Monitor</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\ssd.html">SSD</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\memory.html">RAM</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\keyboard.html">style="color: #3b82f6;"Keyboards</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\mouse.html">Mouse</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\case.html">Pc Case</a>
+                    </div>
+                </li>
+                <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html">About us</a></li>
+                <li><a href="contact.html" class="cta"><button>Contacts</button></a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+
+    </div> -->
+
+<script>
+    const burger = document.getElementById('burger');
+const navLinks = document.querySelector('.nav-links');
+const navLinkItems = document.querySelectorAll('.nav-links a');
+
+// Toggle mobile menu
+burger.addEventListener('click', (e) => {
+e.stopPropagation();
+navLinks.classList.toggle('active');
+});
+
+// Close menu on link click
+navLinkItems.forEach(link => {
+link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+});
+});
+
+// Close when clicking outside
+document.addEventListener('click', (e) => {
+if (!navLinks.contains(e.target) && !burger.contains(e.target)) {
+    navLinks.classList.remove('active');
+}
+});
+
+</script>
+    <h1 class="hd">KEYBOARD</h1>
+    <div class="product-grid">
+
+      
+        <div class="product" style="background-color: #e0e7ff" data-name="product1">
+            <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\ASUS ROG Falchion Ace (90MP0346-BKUA00) NX Red Switch Gaming Keyboard (Black).png" alt="c1" >
+            <div class="definition">
+                <p>₱5,795.00<br>ASUS ROG Falchion Ace (90MP0346-BKUA00) NX Red Switch Gaming Keyboard (Black)</p> 
+            </div>
+        </div>
+   
+    
+        <div class="product" style="background-color: #e0e7ff" data-name="product2">
+            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\ASUS ROG Falchion Ace (90MP0346-BKUA00) NX Red Switch Gaming Keyboard (Black)(1).png" alt="c1">
+            <div class="definition">
+                <p>₱4,700.00<br>ASUS ROG Falchion Ace (90MP0346-BKUA00) NX Red Switch Gaming Keyboard (Black)</p> 
+            </div>
+        </div>
+    
+
+    
+        <div class="product" style="background-color: #e0e7ff" data-name="product3">
+            <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\ASUS TUF Gaming K3 (Blue Switch) RGB Mechanical Gaming Keyboard (Gun Metal).png" alt="c1" >
+            <div class="definition">
+                <p>₱3,600.00<br>ASUS TUF Gaming K3 (Blue Switch) RGB Mechanical Gaming Keyboard (Gun Metal)</p> 
+            </div>
+            </div>
+     
+
+        
+            <div class="product" style="background-color: #e0e7ff"data-name="product4">
+                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\Logitech G PRO X TKL Wireless Gaming Keyboard (Black).png" alt="c1">
+                <div class="definition">
+                    <p>₱11,200.00 <br>Logitech G PRO X TKL Wireless Gaming Keyboard (Black)</p> 
+                </div>
+                </div>
+            
+
+               
+                <div class="product" style="background-color: #e0e7ff">
+                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\Logitech G PRO X TKL Wireless Gaming Keyboard (White).png" alt="c1"data-name="product5">
+                    <div class="definition">
+                        <p>₱11,200.00<br>Logitech G PRO X TKL Wireless Gaming Keyboard (White)</p> 
+                    </div>
+                    </div>
+          
+
+                
+                    <div class="product" style="background-color: #e0e7ff"data-name="product6">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\LOGITECH G213 Prodigy RGB Gaming Keyboard.png" alt="c1">
+                        <div class="definition">
+                            <p><br>₱2,606.00 <br>LOGITECH G213 Prodigy RGB Gaming Keyboard</p> 
+                        </div>
+                        </div>
+                
+
+                     
+                        <div class="product" style="background-color: #e0e7ff"data-name="product7">
+                            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\LOGITECH G512 Carbon RGB Mechanical GX Blue Switch (CLICKY) Gaming Keyboard.png" alt="c1">
+                            <div class="definition">
+                                <p>₱5,795.00<br>LOGITECH G512 Carbon RGB Mechanical GX Blue Switch Gaming Keyboard</p> 
+                            </div>
+                            </div>
+                                
+                        
+                        
+                     
+                            <div class="product" style="background-color: #e0e7ff"data-name="product8">
+                                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\LOGITECH G713 Wired (Tactile) Gaming Keyboard.png" alt="c1" >
+                                <div class="definition">
+                                    <p>₱9,350.00<br>LOGITECH G713 Wired (Tactile) Gaming Keyboard</p> 
+                                </div>
+                                </div>
+                         
+
+                            
+                        
+                            <div class="product" style="background-color: #e0e7ff"data-name="product9">
+                                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\LOGITECH K270 Full-size Wireless Keyboard.png" alt="c1">
+                                <div class="definition">
+                                    <p>₱1,100.00 <br>LOGITECH K270 Full-size Wireless Keyboard</p> 
+                                </div>
+                                </div>
+                         
+
+                            
+                       
+                            <div class="product" style="background-color: #e0e7ff"data-name="product10">
+                                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\RAZER BlackWidow V4 75_ White RGB Hot-swappable Mechanical Gaming Keyboard.png" alt="c1">
+                                <div class="definition">
+                                    <p>₱10,830.00<br>RAZER BlackWidow V4 75 White RGB Hot-swappable Mechanical Gaming Keyboard</p> 
+                                </div>
+                                </div>             
+    </div>
+<!-- PIP UP -->
+<div class="products-preview">
+  <div class="preview" data-target="product1">
+      <i class="fa fa-times"></i>
+      <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\ASUS ROG Falchion Ace (90MP0346-BKUA00) NX Red Switch Gaming Keyboard (Black).png" alt="gc1">
+      <h3>ASUS ROG Falchion Ace (90MP0346-BKUA00) NX Red Switch </h3>
+
+      <p class="description">ROG Falchion Ace 65% compact gaming keyboard with pre-lubed ROG NX mechanical switches with ROG switch stabilizer.</p>
+      <div class="price">₱4,700.00</div>
+      <div class="buttons">
+          <a href="https://pcx.com.ph/products/asus-rog-falchion-ace-90mp0346-bkua00-nxred-switch-black" target="_blank" class="cart">See More</a>
+      </div>
+  </div>
+
+  <div class="preview" data-target="product2">
+      <i class="fa fa-times"></i>
+      <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\ASUS ROG Falchion Ace (90MP0346-BKUA00) NX Red Switch Gaming Keyboard (Black)(1).png">
+      <h3>ASUS TUF Gaming K3 (Blue Switch) RGB Mechanical Gaming Keyboard (Gun Metal)</h3>
+
+      <p class="description">ASUS TUF Gaming K3 is a mechanical RGB keyboard that features durable switches for responsive and reliable performance.</p>
+      <div class="price">₱3,600.00</div>
+      <div class="buttons">
+        <a href="https://pcx.com.ph/collections/gaming-keyboards/products/asus-tuf-gaming-k3-blue-switch-rgb-mechanical-gaming-keyboard-gun-metal
+        " target="_blank" class="cart">See More</a>
+    </div>
+  </div>
+  <div class="preview" data-target="product3">
+    <i class="fa fa-times"></i>
+    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\RAZER BlackWidow V4 75_ White RGB Hot-swappable Mechanical Gaming Keyboard.png">
+    <h3>ASUS TUF Gaming K1 RGB Gaming Keyboard
+    </h3>
+   
+    <p class="description">ASUS TUF Gaming K1 is a gaming keyboard that delivers uncompromising performance and exceptional durability. It's equipped with switches that deliver silent tactility with every press</p>
+    <div class="price">₱2,050.00
+    </div>
+    <div class="buttons">
+      <a href="https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard?_pos=1&_sid=9342d99ec&_ss=r " target="_blank" class="cart">See More</a>
+  </div>
+</div>
+
+  <div class="preview" data-target="product4">
+      <i class="fa fa-times"></i>
+      <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\Logitech G PRO X TKL Wireless Gaming Keyboard (Black).png">
+      <h3>Logitech G PRO X TKL Wireless Gaming Keyboard (Black)</h3>
+ 
+      <p class="description">The next evolution of the PRO keyboard, delivering the championship-trusted performance.
+      </p>
+      <div class="price">₱11,200.00 - ₱12,100.00</div>
+      <div class="buttons">
+        <a href="https://pcx.com.ph/collections/gaming-keyboards/products/logitech-g-pro-x-tkl-wireless-gaming-keyboard-black" target="_blank" class="cart">See More</a>
+    </div>
+  </div>  
+
+  <div class="preview" data-target="product5">
+    <i class="fa fa-times"></i>
+      <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\Logitech G PRO X TKL Wireless Gaming Keyboard (White).png">
+    <h3>Logitech G PRO X TKL Wireless Gaming Keyboard (White)</h3>
+
+    <p class="description">The next evolution of the PRO keyboard, delivering the championship-trusted performance.
+    </p>
+    <div class="price">₱11,200.00 - ₱12,100.00</div>
+    <div class="buttons">
+      <a href="https://pcx.com.ph/collections/gaming-keyboards/products/logitech-g-pro-x-tkl-wireless-gaming-keyboard-black" target="_blank" class="cart">See More</a>
+  </div>
+</div>     
+  
+  <div class="preview" data-target="product6">
+      <i class="fa fa-times"></i>
+      <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\LOGITECH G213 Prodigy RGB Gaming Keyboard.png">
+      <h3>LOGITECH G213 Prodigy RGB Gaming Keyboard</h3>
+  
+      <p class="description">Durable with gaming-grade performance. Tactile Mech-Dome keyswitches are spill-resistant. </p>
+      <div class="price">₱2,606.00</div>
+      <div class="buttons">
+        <a href="https://pcx.com.ph/collections/gaming-keyboards/products/logitech-g213-prodigy-rgb-gaming-keyboard
+        " target="_blank" class="cart">See More</a>
+    </div>
+  </div>   
+  
+  <div class="preview" data-target="product7">
+      <i class="fa fa-times"></i>
+      <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\LOGITECH G512 Carbon RGB Mechanical GX Blue Switch (CLICKY) Gaming Keyboard.png">
+      <h3>LOGITECH G512 Carbon RGB Mechanical GX Blue Switch (CLICKY) Gaming Keyboard</h3>
+
+      <p class="description">High-performance gaming keyboard featuring your choice of advanced GX mechanical switches.  </p>
+      <div class="price">₱5,795.00</div>
+      <div class="buttons">
+        <a href="https://pcx.com.ph/collections/graphics-cards/products/asus-prime-geforce-rtx-5070-ti-16gb-gddr7-256-bit-graphics-card
+        " target="_blank" class="cart">See More</a>
+    </div>
+  </div>    
+  
+  <div class="preview" data-target="product8">
+      <i class="fa fa-times"></i>
+      <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\LOGITECH G713 Wired (Tactile) Gaming Keyboard.png">
+      <h3>LOGITECH G713 Wired (Tactile) Gaming Keyboard
+      </h3>
+  
+      <p class="description">From the Aurora Collection, G713 is a wired, compact TKL keyboard designed for comfort with included cloud-soft palm rest.</p>
+      <div class="price">₱9,350.00 - ₱10,100.00 </div>
+      <div class="buttons">
+        <a href="https://pcx.com.ph/collections/gaming-keyboards/products/logitech-g713-wired-tactile-gaming-keyboard" target="_blank" class="cart">See More</a>
+    </div>
+  </div>
+
+  <div class="preview" data-target="product9">
+      <i class="fa fa-times"></i>
+      <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\LOGITECH K270 Full-size Wireless Keyboard.png">
+      <h3>LOGITECH K270 Full-size Wireless Keyboard</h3>
+    
+      <p class="description">Fully wireless, and ready to connect with your setup, K270 is a plug-and-play keyboard that makes work simple and easy.</p>
+      <div class="price">₱1,100.00 - ₱1,195.00 </div>
+      <div class="buttons">
+        <a href="https://pcx.com.ph/products/logitech-k270-full-size-wireless-keyboard?_pos=1&_sid=04ea8423e&_ss=r
+        " target="_blank" class="cart">See More</a>
+    </div>
+  </div>    
+  
+  <div class="preview" data-target="product10">
+      <i class="fa fa-times"></i>
+      <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\Keyboard Pics\RAZER BlackWidow V4 75_ White RGB Hot-swappable Mechanical Gaming Keyboard.png">
+      <h3>RAZER BlackWidow V4 75% White RGB Hot-swappable Mechanical Gaming Keyboard</h3>
+     
+      <p class="description">For those who crave greater customization and immersion, satisfy your enthusiast needs with the Razer BlackWidow V4 75%—a compact, hot-swappable mechanical keyboard powered by Razer Chroma RGB</p>
+      <div class="price">₱10,830.00</div>
+      <div class="buttons">
+        <a href="https://pcx.com.ph/collections/gaming-keyboards/products/razer-blackwidow-v4-75-white-rgb-hot-swappable-mechanical-gaming-keyboard
+        " target="_blank" class="cart">See More</a>
+    </div>
+  </div>    
+  
+  
+</div>
+
+    <footer class="footer">
+        <div class="footer-content">
+          <img class="logo" src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\logo2.png" alt="logo" />
+           <h4>GearByte</h4>
+           <div class="icons">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+           </div>
+            </div>
+          <div class="footer-content">
+            <h4>For more Inquiries visit this website</h4>
+            <p><a href="https://easypc.com.ph/?srsltid=AfmBOooT-pG1UVrnCeNq0ah7m8koZ74Pl7_VkoFnwNeT1hZ8pUmgnhQs" target="_blank" >PcEasy</a></p>
+            <p><a href="https://pcx.com.ph/" target="_blank" >PcExpress</a></p>
+          </div>  
+          <div class="footer-content">
+            <h4>Quick links</h4>
+            <ul>
+              <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">Home</a></li>
+              <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html">Items</a></li>
+              <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html">About us</a></li>
+               
+            </ul>
+          </div>
+
+    </footer>
+    <P style="text-align: center;background-color: rgba(128, 128, 128, 0.467);margin-top: 0px;">@2025 All Rights Reserved</P>
+<p style="color: white;text-align: center;background-color: red;margin: 0px;">Disclaimer: This website is for educational purposes only</p>
+</body>
+</html>

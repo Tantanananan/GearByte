@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GearByte</title>
+  <link rel="stylesheet" href="section.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <script src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">
+            <img class="logo" src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\logo2.png" alt="logo">
+        </a>
+        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">
+            <h1 class="logo1"><b>GearByte</b></h1>
+        </a>
+    </div>
+
+    <nav id="nav-menu">
+        <ul class="nav-links"   >
+            <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">Home</a></li>
+            <li>
+                <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html"style="color: #3b82f6;">Items</a>
+                <div class="dropdown-content">
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\graphicscard.html">Graphics Card</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\motherboards.html">Motherboard</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\processors.html">Processors</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\powersupply.html">Power supply</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\monitor.html">Monitor</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\ssd.html">SSD</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\memory.html"style="color: #3b82f6;">RAM</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\keyboard.html">Keyboards</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\mouse.html">Mouse</a>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\case.html">Pc Case</a>
+                </div>
+            </li>
+            <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html">About us</a></li>
+        </ul>
+        <div class="burger" id="burger">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>
+    <!-- <div class="container">
+    
+        Navigation Menu
+        <nav id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html" style="color: #3b82f6;">Home</a></li>
+                <li>
+                    <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html">Items</a>
+                    <div class="dropdown-content">
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\graphicscard.html">Graphics Card</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\motherboards.html">Motherboard</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\processors.html">Processors</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\powersupply.html">Power supply</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\monitor.html">Monitor</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\ssd.html">SSD</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\memory.html"style="color: #3b82f6;">RAM</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\keyboard.html">Keyboards</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\mouse.html">Mouse</a>
+                        <a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\case.html">Pc Case</a>
+                    </div>
+                </li>
+                <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html">About us</a></li>
+                <li><a href="contact.html" class="cta"><button>Contacts</button></a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+
+    </div> -->
+
+<script>
+    const burger = document.getElementById('burger');
+const navLinks = document.querySelector('.nav-links');
+const navLinkItems = document.querySelectorAll('.nav-links a');
+
+// Toggle mobile menu
+burger.addEventListener('click', (e) => {
+e.stopPropagation();
+navLinks.classList.toggle('active');
+});
+
+// Close menu on link click
+navLinkItems.forEach(link => {
+link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+});
+});
+
+// Close when clicking outside
+document.addEventListener('click', (e) => {
+if (!navLinks.contains(e.target) && !burger.contains(e.target)) {
+    navLinks.classList.remove('active');
+}
+});
+
+</script>
+    <h1 class="hd">RAM</h1>
+    <div class="product-grid">
+
+      
+        <div class="product" style="background-color: #e0e7ff" data-name="product1">
+            <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r1.png" alt="c1" >
+            <div class="definition">
+                <p><br>₱1,750.00<br>KINGSTON 16GB DDR4 3200MHZ FURY BEAST</p> 
+            </div>
+        </div>
+   
+    
+        <div class="product" style="background-color: #e0e7ff"data-name="product2">
+            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r2.png" alt="c1">
+            <div class="definition">
+                <p><br>₱2,650.00<br>TEAM 16GB DDR4 3200MHZ TFORCE DELTA TUF RGB</p> 
+            </div>
+        </div>
+    
+
+    
+        <div class="product" style="background-color: #e0e7ff"data-name="product3">
+            <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r3.png" alt="c1">
+            <div class="definition">
+                <p><br>₱6,900.00<br>TEAMGROUP 1TB MP33 M.2 PCIe NVMe (TM8FP6001T0C101)</p> 
+            </div>
+            </div>
+     
+
+        
+            <div class="product" style="background-color: #e0e7ff"data-name="product4">
+                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r4.png" alt="c1">
+                <div class="definition">
+                    <p><br>₱2,050.00<br>TEAMGROUP ELITE 16GB DDR4 3200MHz </p> 
+                </div>
+                </div>
+            
+
+               
+                <div class="product" style="background-color: #e0e7ff"data-name="product5">
+                    <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r5.png" alt="c1">
+                    <div class="definition">
+                        <p><br>₱1,050.00<br>TRANSCEND 8GB DDR4 PC3200MHZ SODIMM</p> 
+                    </div>
+                    </div>
+          
+
+                
+                    <div class="product" style="background-color: #e0e7ff"data-name="product6">
+                        <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r6.png" alt="c1">
+                        <div class="definition">
+                            <p><br>₱6,950.00<br>KINGSTON 32GB DDR5 6000MT/S</p> 
+                        </div>
+                        </div>
+                
+
+                     
+                        <div class="product" style="background-color: #e0e7ff"data-name="product7">
+                            <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r7.png" alt="c1">
+                            <div class="definition">
+                                <p><br>₱995.00<br> Kingston 4GB DDR4 PC3200MHZ</p> 
+                            </div>
+                            </div>
+                                
+                        
+                        
+                     
+                            <div class="product" style="background-color: #e0e7ff"data-name="product8">
+                                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r8.png" alt="c1">
+                                <div class="definition">
+                                    <p><br>₱7,150.00<br>GSKILLS Trident Z5 Neo RGB DDR5-6000MHz CL32 (2x16GB)</p> 
+                                </div>
+                                </div>
+                         
+
+                            
+                        
+                            <div class="product" style="background-color: #e0e7ff"data-name="product9">
+                                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\KINGSTON 1TB NV2 PCIE NVME M.2 (SNV2S_1000G) Solid State Drive.png" alt="c1">
+                                <div class="definition">
+                                    <p><br>₱6,600.00<br>KINGSTON 2TB NV3 M.2 PCIe NVMe Solid State Drive</p> 
+                                </div>
+                                </div>
+                         
+
+                            
+                       
+                            <div class="product" style="background-color: #e0e7ff"data-name="product10">
+                                <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r10.png" alt="c1">
+                                <div class="definition">
+                                    <p><br>₱3,850.00 <br>KINGSTON 16GB DDR5 6000MHz FURY Renegade</p> 
+                                </div>
+                                </div>       
+    </div>
+    <!-- POP UP -->
+
+    <div class="products-preview">
+      <div class="preview" data-target="product1">
+          <i class="fa fa-times"></i>
+          <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r1.png" alt="gc1">
+          <h3>KINGSTON 16GB DDR4 3200MHZ FURY BEAST</h3>
+          <p class="description">PExperience superior performance with Kingston Fury Beast 16GB DDR4 Memory. Operates at 3200MT/s for lightning speed. Upgrade and conquer with this high-speed, stylish memory module.</p>
+          <div class="price">₱1,750.00</div>
+          <div class="buttons">
+              <a href="https://pcx.com.ph/collections/all-products/products/kingston-16gb-ddr4-3200mhz-fury-beast-ram" target="_blank" class="cart">See More</a>
+          </div>
+      </div>
+  
+      <div class="preview" data-target="product2">
+          <i class="fa fa-times"></i>
+          <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r2.png">
+          <h3>TEAM 16GB DDR4 3200MHZ TFORCE DELTA TUF RGB</h3>
+          <p class="description">Certified by TUF Gaming Alliance
+            120° ultra-wide-angle lighting effects
+            Asymmetrical, minimalist design
+            Aluminum alloy cooling module with high heat transfer efficiency</p>
+          <div class="price">₱2,650.00</div>
+          <div class="buttons">
+            <a href="https://pcx.com.ph/products/teamgroup-delta-tuf-gaming-alliance-rgb-16gb-ddr4-3200mhz-desktop-memory?pr_prod_strat=e5_desc&pr_rec_id=294e74792&pr_rec_pid=9701939020074&pr_ref_pid=8481625473322&pr_seq=uniform" target="_blank" class="cart">See More</a>
+        </div>
+      </div>
+  
+  
+      <div class="preview" data-target="product3">
+          <i class="fa fa-times"></i>
+          <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r3.png">
+          <h3>TEAMGROUP 1TB MP33 M.2 PCIe NVMe (TM8FP6001T0C101)</h3>
+          <p class="description">The desktop memory is made with 100% PCR (Post-Consumer Recycled) plastic and 80% recycled aluminum for the RGB light bar and heat spreader.</p>
+          <div class="price">₱6,900.00</div>
+          <div class="buttons">
+            <a href="https://pcx.com.ph/products/teamgroup-32gb-ddr5-6000mhz-delta-rgb-eco-desktop-memory-silver?pr_prod_strat=e5_desc&pr_rec_id=294e74792&pr_rec_pid=9667780903210&pr_ref_pid=8481625473322&pr_seq=uniform target="target = "_blank" class="cart">See More</a>
+        </div>
+      </div>  
+  
+      <div class="preview" data-target="product4">
+        <i class="fa fa-times"></i>
+        <img src= "C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r4.png">
+        <h3>TEAMGROUP ELITE 16GB DDR4 3200MHz </h3>
+        <p class="description">TEAMGROUP’s ELITE series launches an all new DDR4 memory module product, with an operating voltage of only 1.2V, which saves a lot of power consumption. </p>
+        <div class="price">₱2,050.00</div>
+        <div class="buttons">
+          <a href="https://pcx.com.ph/products/teamgroup-elite-16gb-ddr4-3200mhz-memory-module?pr_prod_strat=e5_desc&pr_rec_id=2c5f2497f&pr_rec_pid=9159525826858&pr_ref_pid=9701939020074&pr_seq=uniform
+          " target="_blank" class="cart">See More</a>
+      </div>
+    </div>     
+      
+      <div class="preview" data-target="product5">
+          <i class="fa fa-times"></i>
+          <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r5.png">
+          <h3>TRANSCEND 8GB DDR4 PC3200MHZ SODIMM</h3>
+          <p class="description">1.2V low working voltage
+            3200 Mbps high speeds
+            ETT grade chips manufactured
+            JEDEC compliant and durability guaranteed</p>
+          <div class="price">₱1,050.00</div>
+          <div class="buttons">
+            <a href="https://pcx.com.ph/products/transcend-8gb-ddr4-pc3200mhz-sodimm-ram?_pos=1&_sid=0e3258149&_ss=r" target="_blank" class="cart">See More</a>
+        </div>
+      </div>   
+      
+      <div class="preview" data-target="product6">
+          <i class="fa fa-times"></i>
+          <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r6.png">
+          <h3>KINGSTON 32GB DDR5 6000MT/S</h3>
+          <p class="description">
+            Kingston FURY™ Beast DDR5 RGB lets you overclock in style on next-gen gaming platforms with cutting-edge technology. Experience the superior speed advancements of DDR5.
+            </p>
+          <div class="price">₱6,950.00</div>
+          <div class="buttons">
+            <a href="https://pcx.com.ph/products/kingston-32gb-ddr5-6000mt-s-kf560c30bwea-32-fury-beast-rgb-ram-white?_pos=16&_sid=0e3258149&_ss=r
+            " target="_blank" class="cart">See More</a>
+        </div>
+      </div>    
+      
+      <div class="preview" data-target="product7">
+          <i class="fa fa-times"></i>
+          <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r7.png">
+          <h3>
+            Kingston 4GB DDR4 PC3200MHZ</h3>
+          <p class="description">ValueRAM's KVR32S22S6/4 as a512M x 64-bit (4GB) DDR4-3200 CL22 SDRAM (Synchronous DRAM), 1Rx16, memory module, based on four 512M x 16-bit FBGA components</p>
+          <div class="price">₱995.00</div>
+          <div class="buttons">
+            <a href="https://pcx.com.ph/products/kingston-4gb-ddr4-pc3200mhz-non-ecc-sodimm-kvr32s22s6-4-ram?_pos=18&_sid=0e3258149&_ss=r" target="_blank" class="cart">See More</a>
+        </div>
+      </div>
+  
+      <div class="preview" data-target="product8">
+          <i class="fa fa-times"></i>
+          <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r8.png">
+          <h3>GSKILLS Trident Z5 Neo RGB DDR5-6000MHz CL32 (2x16GB)</h3>
+          <p class="description">NTrident Z5 Neo RGB DDR5 memory is designed for ultra-high overclocked performance on DDR5-enabled AMD platforms</p>
+          <div class="price">₱7,150.00</div>
+          <div class="buttons">
+            <a href="https://pcx.com.ph/products/gskills-trident-z5-neo-rgb-f5-6000j3238f16gx2-tz5nr-ddr5-6000mhz-cl32-2x16gb-memory-module?_pos=2&_sid=7d180e21e&_ss=r" target="_blank" class="cart">See More</a>
+        </div>
+      </div>    
+      
+      <div class="preview" data-target="product9">
+          <i class="fa fa-times"></i>
+          <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\KINGSTON 1TB NV2 PCIE NVME M.2 (SNV2S_1000G) Solid State Drive.png">
+          <h3>KINGSTON 2TB NV3 M.2 PCIe NVMe Solid State Drive</h3>
+          <p class="description">
+            Kingston’s NV3 PCIe 4.0 NVMe SSD is a next-gen storage solution powered by a Gen 4x4 NVMe controller, delivering read/write speeds up to 6,000/5,000MB/s.</p>
+          <div class="price">₱6,600.00</div>
+          <div class="buttons">
+            <a href="https://pcx.com.ph/products/kingston-2tb-nv3-m-2-pcie-nvme-solid-state-drive?_pos=35&_sid=38e292ee3&_ss=r" target="_blank" class="cart">See More</a>
+        </div>
+      </div>    
+      
+      <div class="preview" data-target="product10">
+          <i class="fa fa-times"></i>
+          <img src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\RAM PNG\r10.png">
+          <h3>KINGSTON 16GB DDR5 6000MHz FURY Renegade </h3>
+          <p class="description">Push the limits like never before with Kingston FURY™ Renegade DDR5 memory, designed for extreme performance on next-gen DDR5 platforms. </p>
+          <div class="price">₱3,850.00</div>
+          <div class="buttons">
+            <a href="https://pcx.com.ph/products/kingston-16gb-ddr5-6000mhz-fury-renegade-memory-module-white?_pos=1&_sid=a970d87ba&_ss=r" target="_blank" class="cart">See More</a>
+        </div>
+      </div>
+  </div>
+
+  <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+          <img class="logo" src="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalsimage\logo2.png" alt="logo" />
+           <h4>GearByte</h4>
+           <div class="icons">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+           </div>
+            </div>
+          <div class="footer-content">
+            <h4>For more Inquiries visit this website</h4>
+            <p><a href="https://easypc.com.ph/?srsltid=AfmBOooT-pG1UVrnCeNq0ah7m8koZ74Pl7_VkoFnwNeT1hZ8pUmgnhQs" target="_blank" >PcEasy</a></p>
+            <p><a href="https://pcx.com.ph/" target="_blank" >PcExpress</a></p>
+          </div>  
+          <div class="footer-content">
+            <h4>Quick links</h4>
+            <ul>
+              <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\finals.html">Home</a></li>
+              <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\items.html">Items</a></li>
+              <li><a href="C:\Users\tantan\Desktop\WEBDEV Files\FINALS SITE\finalscode\categories\about_us.html">About us</a></li>
+               
+            </ul>
+          </div>
+    </footer>
+    <P style="text-align: center;background-color: rgba(128, 128, 128, 0.467);margin-top: 0px;">@2025 All Rights Reserved</P>
+<p style="color: white;text-align: center;background-color: red;margin: 0px;">Disclaimer: This website is for educational purposes only</p>
+</body>
+</html>

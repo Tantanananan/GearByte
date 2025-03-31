@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8; /* Light blue background */
+}
+
+li,
+a,
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #1e3a5f; /* Dark blue text */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;
+    background-color: #e0e7ff; /* Light blue background */
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.logo1 {
+    font-size: 1.8em;
+    margin-left: 10px;
+    color: #1e3a5f;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links li {
+    position: relative;
+}
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #1e3a5f;
+    transition: color 0.3s ease;
+}
+
+
+.nav-links li a:hover {
+    color: #3b82f6; /* Bright blue on hover */
+}
+
+/* Dropdown styles */
+.nav-links li:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    z-index: 999;
+    padding-left: 4%; /* match header padding */
+    padding-right: 4%; /* match header padding */
+    box-sizing: border-box;
+}
+
+
+.dropdown-content a {
+    color: #1e3a5f; /* Dark blue text */
+    padding: 7px;
+    display: block;
+    padding: 10px 20px;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(59, 130, 246, 0.2); /* Light blue on hover */
+    background: #f0f0f0;
+}
+.nav-links .cta button {
+    padding: 8px 16px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nav-links .cta button:hover {
+    background: #2563eb;
+}
+/* Burger Menu */
+.burger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #1e3a5f;
+}
+
+
+.hd {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 500;
+  padding: 0%;
+  margin-top: 30px;
+}
+
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.product {
+  flex: 7 7 calc(33.33% - 20px);
+  max-width: 220px;
+  height: 220px;
+  background-color: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px  rgba(59, 130, 246, 0.8);
+}
+.product .definition {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(55, 55, 55, 0.352);
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+.product:hover .definition {
+  opacity: 1;
+}
+
+.products-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none; /* Hidden by default */
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.products-preview .preview {
+  display: none; /* Hidden by default */
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  margin: 2rem;
+  width: 30rem;
+  border-radius: 10px;
+}
+
+.products-preview .preview.active {
+  display: block; /* Show the active preview */
+}
+
+.products-preview .preview img {
+  height: 15rem;
+}
+
+.products-preview .preview .fa-times {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  color: #444;
+  font-size: 2rem;
+}
+
+.products-preview .preview .fa-times:hover {
+  transform: rotate(90deg);
+  transition: all .3s ease;
+}
+
+.products-preview .preview h3 {
+  color: #444;
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
+
+.products-preview .preview p {
+  line-height: 1.5;
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: #777;
+}
+
+.products-preview .preview .price {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  color: #27ae60;
+}
+
+.products-preview .preview .buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.products-preview .preview .buttons a {
+  flex: 1 1 16rem;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #444;
+  border: 0.1rem solid #444;
+}
+
+.products-preview .preview .buttons a.cart {
+  background: #444;
+  color: #fff;
+}
+
+.products-preview .preview .buttons a.cart:hover {
+  background: #111;
+}
+
+.products-preview .preview .buttons a.buy:hover {
+  background: #444;
+  color: #fff;
+}
+
+.footer {
+  background-color: rgba(128, 128, 128, 0.467);
+  margin-bottom: 0px;
+  margin-top: 30px;
+  padding: 60px 10% 20px;
+  display:grid ;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+
+}
+.footer-content{
+  text-align: left;
+}
+.footer-content h4{
+  margin-bottom: 1rem;
+  margin-right: 50px;
+ 
+}
+.footer-content p a:hover{
+  color: #3b82f6;
+  transform:translateY(-3px) translateX(-3px) ;
+  transition: color 0.3s ease;
+
+}
+.sub{
+  border-radius: 0px;
+  height: 30px;
+  background-color: #1e3a5f;
+  color: whitesmoke;
+}
+.email{
+  height: 30px;   
+  margin-top: 10px;
+  margin-right: 0px;
+}
+.footer-content li{
+  margin-bottom: 10px;
+}
+.footer-content li a{
+  display: block;
+  color: #1e3a5f;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all .3s ease;
+
+}
+.footer-content li a:hover{
+  color: #3b82f6;
+  transform:translateY(-3px) translateX(-3px) ;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: white;
+      width: 1030%;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 99;
+      margin: 0px;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .burger {
+      display: block;
+  }
+}
